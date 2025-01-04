@@ -13,9 +13,9 @@ public class LDAPSAuthenticator {
    
     public boolean authenticate(String username, String password) {
         // String ldapURL = "ldaps://mydomaincontroller.mydomain.com:636";
-        String ldapURL = "ldaps://GIG-DC1-G005.gig.holdings:636";
-        String baseDN = "DC=gig,DC=holdings";
-        //String baseDN = "DC=holdings,DC=gig";
+        String ldapURL = "ldaps://";
+        String baseDN = "";
+        //String baseDN = "";
         String searchFilter = "(sAMAccountName=" + username + ")";
         String userDN = "";
         String userPassword = password;
@@ -31,7 +31,7 @@ public class LDAPSAuthenticator {
             
             
             env.put(Context.SECURITY_PROTOCOL, "ssl");
-            env.put(Context.DNS_URL, "GIG-DC1-G005.gig.holdings");
+            env.put(Context.DNS_URL, "");
           
             
             
