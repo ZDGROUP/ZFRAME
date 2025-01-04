@@ -1,0 +1,51 @@
+﻿/**
+*
+*	Name:		IRANSharp Font
+*	Version:		3.0
+*	Author:		Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:	June 10, 2017
+*	Updated on:	June 10, 2017
+*	Website:		http://fontiran.com
+*	Copyright:	Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت ایران شارپ یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRANSharp fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*	
+**/
+@font-face {
+	font-family: ZFRAMEFONTS;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/persina-font/eot/iranyekanwebbold.eot');
+	src: url('../fonts/persina-font/eot/iransharp_bold_web.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/persina-font/woff2/iransharp_bold_web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/persina-font/woff/iransharp_bold_web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/persina-font/ttf/iransharp_bold_web.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: ZFRAMEFONTS;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/persina-font/eot/iransharp_light_web.eot');
+	src: url('../fonts/persina-font/eot/iransharp_light_web.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/persina-font/woff2/iransharp_light_web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/persina-font/woff/iransharp_light_web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/persina-font/ttf/iransharp_light_web.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: ZFRAMEFONTS;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/persina-font/eot/iransharp_regular_web.eot');
+	src: url('../fonts/persina-font/eot/iransharp_regular_web.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/persina-font/woff2/iransharp_regular_web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/persina-font/woff/iransharp_regular_web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/persina-font/ttf/iransharp_regular_web.ttf') format('truetype');
+}
+

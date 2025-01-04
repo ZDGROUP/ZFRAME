@@ -1,0 +1,62 @@
+﻿.Heading
+{
+    background-color: Maroon;
+    color: White;
+    font-family: Tahoma;
+    font-size: 10pt;
+    font-weight: normal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.SubHeading
+{
+    background-color: Gray;
+    color: Black;
+    font-family: Tahoma;
+    font-size: 9pt;
+    font-weight: normal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.LeftColumn
+{
+    background-color: Red;
+    color: White;
+    font-family: Tahoma;
+    font-size: 10pt;
+    font-weight: normal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Items
+{
+    background-color: Yellow;
+    color: Black;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: normal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Totals
+{
+    background-color: Orange;
+    color: Black;
+    font-family: Tahoma;
+    font-size: 9pt;
+    font-weight: bold;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Table
+{
+    border-style: solid;
+    border-width: thin;
+    border-color: Blue;
+    background-color: Silver;
+}

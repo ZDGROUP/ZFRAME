@@ -1,0 +1,4857 @@
+@charset "UTF-8";
+@import url(fontiran.css);
+@import url(bootstrap.min.css);
+@import url(newStyle.css);
+@import url(select2.min.css);
+
+
+
+html, 
+body {
+    /*min-height:100%; padding:0; margin:0;  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-color:#F1FFE7 !important;*/
+       min-height: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+   background-color: #f9f9f9 !important;
+    background-image: none
+}
+
+#wrapper {padding:50px 0; background-color:#FFF; position:relative; top:0; bottom:0; left:0; right:0;}
+#content {min-height:100%; background-color:#FFF;}
+header {
+    
+    margin-top: -50px;
+    height: 30px;
+    /*background-color: #000000; /*background: #fcfcfc url(../../Images/grid-alt.png) repeat-x top;*/
+    color: #000000;    
+    height: 32px; padding: 5px; width: 99.6%; position: fixed;  padding-top: 11px;vertical-align: middle;
+/*    background: linear-gradient(to left, #555555 , #ffffff);*/
+background-color: #ff730e;
+}
+
+
+div.MainClass
+{
+/*    background-image: url('../Images/1BGG3.jpg');  background-repeat: no-repeat;*/
+    background-image: url('../Images/1BGG3.jpg'); 
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    
+/*   opacity: 0.9;*/
+  
+       
+}
+
+.divMaintree{
+/*    background: linear-gradient(to right, #769db4 , #3a3d37);*/
+     
+     height:auto;
+     
+}
+
+.divMaintree .ButtonLable{
+    color:black;
+/*    font-size: 10px;*/
+    /*font-weight: bold;*/
+}
+.divMaintree  .LinkLabelTree
+{
+/*    color:#ffffff;*/
+ color:black;
+}
+span
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.SpanGridPaging
+{
+    color: #000000 !Important;
+}
+
+header span.TitleText {
+    font-family: "ZFRAMEFONT";
+    color: #FFF;    
+    font-size: 13px;
+    background-color:transparent;
+    text-decoration: none;
+    
+
+}
+
+header span.Title {
+    font-family: "ZFRAMEFONT";
+    color: #FFF;    
+    font-size: 15px;
+    background-color:transparent;
+    text-decoration: none;
+
+}
+
+header span.Title:hover {
+    font-family: "ZFRAMEFONT";
+    color: #FCB322;    
+    font-size: 15px;
+    background-color:transparent;
+    text-decoration: none;
+
+}
+footer {
+    margin-bottom:-380px;
+    height:20px; 
+    /*background-color:black;*/
+}
+p {margin:0; padding:0 0 1em 0;}
+
+#wrapper1 {padding:50px 0; position:relative;height:600px; top:0; bottom:0; left:0; right:0;}
+#content1 {
+    min-height: 100%;
+    background-color: #FFFFFF;
+}
+
+Div.hiddenObject {
+
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    text-align: right;
+    background-color: #607998;    
+    margin-top: 0px;
+    position:fixed;
+    top:-10000px;
+    right:0px;
+    width:100%;
+    z-index:3;
+
+}
+
+Div.ShowObjectDive {
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    text-align: right;
+   background-color: #f9f9f9 !important;
+    height: 100%;
+    margin-top: 0px;
+    position: fixed;
+    top: -0px;
+    right: 0px;
+    width: 100%;
+    overflow:auto;
+    z-index: 3;
+
+}
+
+span.Title {
+    font-family: "ZFRAMEFONT";
+    color: #626262;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space:nowrap;
+}
+
+.Grid th a span {
+white-space: nowrap;
+ 
+}
+
+Span.ZLBLMESSAGE
+{
+    font-family: "ZFRAMEFONT";
+    color: #000099;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+
+}
+span.TitleLink {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+img.ButtonImage
+{
+
+    color: black;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+    cursor:  pointer;
+}
+
+span.BindingTitle
+{
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+}
+
+span.RequiedLable {
+    font-family: "ZFRAMEFONT";
+    color: #0066FF;
+    font-size: 12px;
+    background-color: transparent;
+    text-decoration: none;
+}
+span.validator{
+    font-family: "ZFRAMEFONT";
+    color: red;
+    position:absolute;
+    top:5px;
+    right:30px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+span.lblstar {
+    font-family: "ZFRAMEFONT";
+    color: #FF3300;
+    font-size: 12px;
+    text-decoration: none;
+}
+a.LinkStyle1 {
+    font-family: "ZFRAMEFONT";
+    font-size: small;
+    color: black;
+    text-decoration: none;
+    color:#c1f3f7;
+
+}
+
+
+
+Input{
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction:rtl;
+
+
+}
+
+
+
+input[type="text"] {
+    
+    border: 1px solid #cccccc;        
+    font-family: "ZFRAMEFONT";
+    font-size: 11px;
+    height: 30px;
+    padding: .375rem 0.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;    
+    background-size: 10px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 250px;
+    
+}
+
+input[type="text"]:focus {
+    
+/*     border: 1px solid #00cccc;    */
+     /*box-shadow: 2px 2px 2px #66ccff;*/
+     border: 1px solid #009999; 
+}
+
+input[type="password"]:focus {
+      border: 1px solid #55595e;
+}
+
+select.DDList {
+        font-family: "ZFRAMEFONT" !important;
+        height: 30px;
+        padding: .375rem 0.75rem .375rem .75rem;
+        line-height: 1.5;
+        color: #495057;
+        vertical-align: middle;        
+        background: #fff url("../Images/Control/down.png") no-repeat left .75rem center;   
+        background-size: auto;
+        background-size: 8px 10px;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 250px;
+        font-size: 13px;
+}
+
+select.DDList.option {
+  font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    width:155px;
+    height:25px; 
+    text-decoration: none;
+    direction:rtl;
+}
+
+select.DDListError {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    width:155px;
+    height:25px; 
+    text-decoration: none;
+    direction:ltr;
+}
+select.DDListSmall
+{
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    width:50px;
+    text-decoration: none;
+
+    direction:rtl;
+}
+Input.CheckBox {
+    font-family: "ZFRAMEFONT";
+    color: black !important;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+label {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;  
+}
+
+.ToolBoxControl{
+    width: auto !important;
+    height: auto !important;
+  }
+
+Input.Command {
+   
+        font-family: "ZFRAMEFONT";
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        border:  1px solid #123873;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        background-color: #e4f0f4 !important;   
+   
+}
+
+Input.Command:hover {
+        font-family: "ZFRAMEFONT";
+        font-size: 12px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #bad2d6  !important;
+        border: 1px solid #123873 !important;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+      
+}
+
+input.FormButton {
+    border: 1px solid #C0C0C0;
+    font-family: "ZFRAMEFONT";
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+}
+#a{
+    background: red;
+    width: 20px;
+}
+Input.FormButton:hover {
+    border: 1px solid #C0C0C0;
+    font-family: "ZFRAMEFONT";
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #CCCCCC;
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+}
+
+
+.PickerCSS
+{
+    background-color: #ffffff;
+    border-right: #000000 2px solid;
+    border-top: #000000 2px solid;
+    border-left: #000000 2px solid;
+    border-bottom: #000000 2px solid;
+    z-index:101;
+}
+.PickerHeaderCSS
+{
+    background-color: #717891;
+    height: 30px;
+    font-family: "ZFRAMEFONT";
+}
+
+
+A.PickerHeaderCSS
+{
+    background-color: #717891;
+    height: 30px;
+    font-family: ZFRAMEFONT;
+    color: #FFFFFF;
+    font-size: medium;
+}
+.PickerFooterCSS
+{
+    background-color: #717891;
+    font-family: "ZFRAMEFONT";
+    font-size: small;
+    color: #FFF;
+}
+.PickerWeekDayCSS
+{
+    background-color: #18234D;
+    text-align: center;
+    font-size: 8pt;
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    height: 19px;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF;
+}
+.PickerCalendarCSS
+{
+
+    background-color: #CCCCCC;
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    height: 19px;
+    font-family: "ZFRAMEFONT";
+    font-size: small;
+    z-index:101;
+}
+.PickerWorkDayCSS
+{
+    background-color: #ffffff;
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-family: "ZFRAMEFONT";
+    font-size: small;
+}
+A.PickerWorkDayCSS
+{
+    color: black;
+    text-decoration: none;
+    border: none;
+    font-family: "ZFRAMEFONT";
+    font-size: small;
+}
+.PickerForbidenCSS
+{
+    background-color: #FF3300;
+    color: #000000;
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-weight: normal;
+    font-family: "ZFRAMEFONT";
+}
+.PickerSelectedCSS
+{
+    background-color: #E9931A;
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF;
+}
+A.PickerSelectedCSS
+{
+    font-weight: normal;
+    color: #000000;
+    border: none;
+    font-family: "ZFRAMEFONT";
+    font-size: small;
+}
+
+
+
+.Grid {
+	width: 100%;
+	margin: 0 0 0 0;
+	font-family: "ZFRAMEFONT";
+	color: #FFF;
+	font-size: x-small;
+   
+    border-collapse: collapse;
+    overflow: scroll;
+}
+.Grid  .title {
+  
+  color: black;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #d6dee1;
+  }
+
+
+
+
+.Grid td {
+    font-family: "ZFRAMEFONT";
+    font-size: small;
+    height: 25px;
+     border: 1px solid #FFF;
+    caption-side: top;
+    margin-left: 10px;
+    text-align: right;
+    padding: 12px;
+    border-left-style: hidden;
+    /*border-style: hidden;*/
+}
+
+
+
+.Grid th {
+	/* font-family: "ZFRAMEFONT"; */
+	/* color: #3b3333; */
+	/* background: linear-gradient(to bottom, #999999 1%, #999999 98%); */
+	/* font-size: small; */
+	/* height: 15px; */
+	/* font-weight: bold; */
+	text-align: right;
+	font-family: "ZFRAMEFONT";
+	/* color: white; */
+	/* background: linear-gradient(to bottom, #919191 1%, #a3a5a8 63%) !important; */
+	 background-color: #e6edfb; 
+	font-size: small;
+	height: 45px;
+	font-weight: bold;
+        border-bottom: 2px solid #2266e3 !important
+	/* border: solid 2px #3293e8; */
+	/*border-radius: 10px;*/
+	/*border-style: hidden;*/
+}
+
+
+.Grid th a {
+/*    color: #3b3333;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    height: 10px;
+    font-weight: bold;*/
+
+color: #000;
+    font-family: "ZFRAMEFONT";
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+.Grid th a:hover {
+    /*color: red;*/
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    height: 10px;
+    font-weight: bold;
+    
+}
+
+
+.Grid .select {
+    font-family: "ZFRAMEFONT";
+    /*background: #397097 repeat-x top;*/
+    background: #d8e4fb repeat-x top !important ;
+    font-size: x-small;
+    height:10px;
+    border-right: 5px solid #2266e3 !important;
+    /*color:black;*/
+}
+.Grid .select .title
+{
+    /*color:#fff;*/
+    color:black;
+}
+
+.Grid .select input[type="button"].GridButton {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    color: #FFFFFF;
+    
+    background:#3366ff;
+}
+
+.Grid .select input[type="button"].GridButton:hover {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    /*background-color: #000000;*/
+    color: #FFFFFF;
+}
+
+
+.Grid .select input[type="button"].GridButtonSearch {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    background-color: #4E4E4E;
+    color: #3399ff;
+}
+
+.Grid .select input[type="button"].GridButtonSearch:hover {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+
+.GridButtonSearch {
+	font-family: "ZFRAMEFONT";
+	font-size: x-small;
+	height: 25px;
+	background-color: #2266E31C;
+	color: #3399ff;
+}
+
+.GridButtonSearch:hover {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    background-color: #0099cc;
+    color: #FFFFFF;
+}
+
+
+
+
+
+input[type="button"].GridButton {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    border: 1px solid #51504F;
+    background: #fff;
+}
+
+input[type="button"].GridButton:hover {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+}
+
+
+.Grid tr {
+	border-color: #FFF !important;
+	/*border-style: none none none none !important;*/
+	border-width: 1px !important;
+	font-family: "ZFRAMEFONT" !important;
+	/* background: #f0f0f0 repeat-x top !important; */
+	font-size: x-small !important;
+	height: 25px !important;
+	/*border-style: hidden;*/
+}
+
+
+
+
+
+.Grid .alt{
+    border-color: #FFF;
+    /*border-style: none none double none;*/
+    border-width: 1px;
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top !important;
+  
+    font-size: x-small;
+    height: 25px;
+
+}
+
+
+
+.Grid .SearchGrid {
+    border-style: none;
+    border-width: 0px;
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+}
+
+
+.Grid .SearchGrid tr {
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+}
+
+.Grid .SearchGrid tr:hover {
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+}
+
+.Grid .SelectSearch {
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+}
+
+
+
+.Grid .pgr {
+    font-family: "ZFRAMEFONT";
+    /*background: linear-gradient(to bottom, #999999 26%, #999999 100%);*/
+}
+.Grid .pgr table {font-family: "ZFRAMEFONT"; }
+.Grid .pgr td {
+	/* font-family: "ZFRAMEFONT"; */
+	/* border-width: 0; */
+	/* background: linear-gradient(to bottom, #999999 1%, #999999 98%); */
+	/* font-weight: bold; */
+	/* color: #fff; */
+	/* line-height: 12px; */
+	/* height: 20px; */
+	/* width: 20px; */
+	/* text-align: center; */
+	font-family: "ZFRAMEFONT";
+	border-width: 0;
+	/* background: linear-gradient(to bottom, #919191 1%, #a3a5a8 63%) !important; */
+	background-color: transparent !important;
+	font-weight: bold;
+	color: #fff;
+	line-height: 12px;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	padding: 4px;
+	padding-right: 15px;
+}
+
+.Grid .pgr tr {font-family: "ZFRAMEFONT"; border-width: 0;   font-weight: bold; color: #999999; line-height: 12px; height:20px; width:20px; text-align:center;}
+.Grid .pgr tr:hover {font-family: "ZFRAMEFONT"; border-width: 0;   font-weight: bold; color: #fff; line-height: 12px; height:20px; width:20px; text-align:center;}
+.Grid .pgr td:hover {
+    font-family: "ZFRAMEFONT";
+    border-width: 0;
+    font-weight: bold;
+    color: #fff;
+    line-height: 12px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    background-color: #c1f3f7;
+}
+.Grid .pgr span {
+    color: #ffffff;
+    height: 20px;
+    width: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+.Grid .pgr a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    width: 20px;
+    font-size: small;
+}
+.Grid .pgr a:hover {
+    color: #000;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    width: 20px;
+    font-size: small;
+}
+
+
+
+
+/* Child Form Grid Style  */
+
+
+.FROMCGRID .Grid {
+    border: 2px solid #FFF;
+    background-color: #fff;
+    width: 100%;
+    margin: 0px 0 0 0 ;
+    font-family: "ZFRAMEFONT";
+    color: #474747;    
+    font-size: x-small;
+}
+
+.FROMCGRID .Grid td {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    border: 1px solid #FFF;
+    caption-side: top;
+    margin-left: 10px;
+    text-align: center;
+}
+
+
+
+.FROMCGRID .Grid th {
+    font-family: "ZFRAMEFONT";
+    color: #fff;
+/*    background: #666666 repeat-x top;*/
+    font-size: small;
+    height: 15px;
+    font-weight: bold;
+}
+
+
+.FROMCGRID .Grid th a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    height: 10px;
+    font-weight: bold;
+}
+.FROMCGRID .Grid th a:hover {
+/*    color: #ffff00;*/
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    height: 10px;
+    font-weight: bold;
+}
+.FROMCGRID .Grid .alt{
+    font-family: "ZFRAMEFONT";      
+    font-size: x-small;
+    height:10px;
+
+}
+
+
+.FROMCGRID .Grid .select {
+    font-family: "ZFRAMEFONT";
+    background: #CCCCCC repeat-x top;
+    font-size: x-small;
+    height:10px;
+}
+
+
+.FROMCGRID .Grid .select input[type="button"].GridButton {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    
+    background-color: #4E4E4E;
+    color: #FFFFFF;
+}
+
+.FROMCGRID .Grid .select input[type="button"].GridButton:hover {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+.FROMCGRID .Grid tr {
+    border-color: #FFF;
+    border-style: none none double none;
+    border-width: 1px;
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+    height: 25px;
+
+}
+
+.FROMCGRID .Grid tr:hover {
+    font-family: "ZFRAMEFONT";
+    background: #E5E5E5 repeat-x top;
+    font-size: x-small;
+    height: 25px;
+}
+
+
+.FROMCGRID .Grid .SearchGrid {
+    border-style: none;
+    border-width: 0px;
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+}
+
+
+.FROMCGRID .Grid .SearchGrid tr {
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+}
+
+.FROMCGRID .Grid .SearchGrid tr:hover {
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+}
+
+.FROMCGRID .Grid .SelectSearch {
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+}
+
+
+
+.FROMCGRID .Grid .pgr {
+    font-family: "ZFRAMEFONT";
+    background: #009999 url(Images/grid-pgr.png) repeat-x top;
+
+
+}
+.FROMCGRID .Grid .pgr table {font-family: "ZFRAMEFONT";}
+.FROMCGRID .Grid .pgr td {font-family: "ZFRAMEFONT"; border-width: 0; background-color: #009999;   font-weight: bold; color: #fff; line-height: 12px; height:20px; width:20px; text-align:center;}
+.FROMCGRID .Grid .pgr tr {font-family: "ZFRAMEFONT"; border-width: 0;   font-weight: bold; color: #fff; line-height: 12px; height:20px; width:20px; text-align:center;}
+.FROMCGRID .Grid .pgr tr:hover {font-family: "ZFRAMEFONT"; border-width: 0;   font-weight: bold; color: #fff; line-height: 12px; height:20px; width:20px; text-align:center;}
+.FROMCGRID .Grid .pgr td:hover {
+    font-family: "ZFRAMEFONT";
+    border-width: 0;
+    font-weight: bold;
+    color: #fff;
+    line-height: 12px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    background-color: #009999;
+}
+.FROMCGRID .Grid .pgr span {
+    color: #ffffff;
+    height: 20px;
+    width: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+.FROMCGRID .Grid .pgr a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    width: 20px;
+    font-size: small;
+}
+.FROMCGRID .Grid .pgr a:hover {
+    color: #000;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    width: 20px;
+    font-size: small;
+}
+
+
+
+/* End Child From Grid Style */
+
+
+
+div.hiddenPanel{z-index:7;top:0;left:0;width:100%;height:0%;vertical-align:top;opacity:.1;visibility:hidden;text-align:right;position:fixed;background-color:#000}
+div.ShowPanel {
+    
+    height: 100%;    
+    z-index: 12;
+    top: 0;    
+    visibility: visible;
+    width: 100%;
+    left: 0;    
+    position: fixed;
+    background-color: #00818180;
+    height: 100%;
+    text-align: center; 
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+div.ShowPanelContenet
+{
+     display: table;
+     margin: 0 auto;
+     
+}
+
+table.FormBinding {    
+  
+  /* background-color: #FFFFFF;*/
+    caption-side: top;
+    color: #FFFFFF;
+    width: 100%;      
+}
+div.DivFromBinding
+{
+    background-color: #FFFFFF;
+    width: 100%;  
+}
+
+table.ZFormTable {
+    padding: 0px;    
+    background-color: white;
+    /*//background-color: #E0E0E0;*/
+    caption-side: top;
+    color: #FFFFFF;
+    border: 1px solid #787e80  !important;
+    width: 700px;
+    margin: 0 0 0 0;
+    /*box-shadow: 5px 5px 2px #cccccc;*/
+    empty-cells:hide;
+    
+     
+   
+}   
+
+table.ZFormTable td table {
+    border-style: none;        
+}
+
+table.ZFormTable td table td {
+    border-style: none; 
+    vertical-align: middle;
+}
+
+
+table.ZFormTable td {
+    border: 0px solid #2266e3;
+    caption-side: top;
+}
+
+Table.BindingTable {
+    border: 1px dashed #000000;
+    background-color: #ffffff;
+    caption-side: top;
+    empty-cells: show;
+}
+Table.BindingTable ZFormTable {
+    padding: 0px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    caption-side: top;
+    color: #FFFFFF;
+    width: 700px;
+    margin: 10px 0 0 0;
+    box-shadow: 10px 10px 5px #888;
+}
+
+table.BindingTable td {
+    border: 1px dotted #000000;
+    caption-side: top;
+}
+
+
+
+ZFormTable  BindingTable {
+    border: 1px dashed #000000;
+    background-color: #ffffff;
+    caption-side: top;
+    empty-cells: show;
+}
+
+ZFormTable BindingTable td {
+    border: 1px dotted #000000;
+    caption-side: top;
+    background-color: #FFFFFF;
+}
+
+tr.BindingHeader {
+    border: 0px dotted #000000;
+    caption-side: top;
+    
+    width: 100%;
+    text-align: center;
+}
+
+FormBinding thead 
+{
+    position: fixed;
+}
+
+ZFormTable ZFormTable{
+
+}
+
+td.HeaderFrom {
+    /*background-color: #9999ff;*/
+    height:30px; 
+    
+     /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#39489e),color-stop(0.03, #9999ff));*/
+      /*background: linear-gradient(to left, #000000 , #000000);
+    background: #3b7ba8;*/
+      background-color: #2266e3;
+}
+
+td.HeaderFromB {
+    /*background-color: #ffcc33;*/
+    height:40px; 
+    border-radius:10px;
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#e4bd33),color-stop(0.03, #ffEE33));*/
+    /*background-color: #3b7ba8;*/
+    background: linear-gradient(to left, #003b64 , #4d82a8);
+    
+}
+
+
+
+td.HeaderFromC {
+  
+    height:30px; 
+    border-radius:10px;
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#006600),color-stop(0.03, #00cc33));*/
+    background: linear-gradient(to left, #003b64 , #4d82a8);
+}
+
+
+td.HeaderFromC span.Title 
+{
+  
+    color: white !important;
+}
+
+
+input.CommandLogin
+{
+    
+    cursor: pointer;
+    height:30px; 
+    border-radius:10px;
+    width: 150px;
+    border: 1px solid #0099cc;
+    background:-webkit-gradient(linear,left top, left bottom,from(white),to(#3399ff),color-stop(0.03, #99ccff));
+}
+
+input.CommandLogin:hover
+{
+    
+    height:30px; 
+    border-radius:10px;
+    width: 150px;
+    border: 1px solid #0099cc;
+    background:-webkit-gradient(linear,left top, left bottom,from(white),to(#99ccff),color-stop(0.03, #3399ff));
+}
+
+
+td.HeaderFrom span.Title
+{
+    font-family: "ZFRAMEFONT";
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td.HeaderFromB span.Title
+{
+    font-family: "ZFRAMEFONT";
+    color: white;
+    font-weight: bold;
+}
+
+td.HeaderFromC span.Title
+{
+    font-family: "ZFRAMEFONT";
+    color: #000;
+    font-weight: bold;
+}
+
+
+td.HeaderFromChild {
+    /*//background-color: #ccccff;*/
+    background: linear-gradient(to left, #0a67aa , #4d82a8);
+}
+td.HeaderFromDiagnostic {
+    background-color: #CCFFFF;
+
+
+
+}
+
+td.listObjectHeader {
+    
+}
+
+
+table.WorkFlowTable {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    caption-side: top;
+}
+table.WorkFlowTable td {
+    border: 1px solid #808080;
+    caption-side: top;
+}
+
+Table.WorkFlowTableDetaile {
+    background-color: #FFFFFF;
+    border: 1px solid #000099;
+}
+td.WorkFlowTDHeader {
+    background-color: #FFCC00;
+}
+
+
+
+table.ZFormTableControl {
+    background-color: #FFFFFF;
+    direction: rtl;
+}
+
+table.FromCaption {
+    background-color: #999999;
+    border: 0;
+    direction: rtl;
+    color: #FFFFFF;
+}
+
+table.FromCaption span.Title {
+    background-color: #999999;
+    border: 0;
+    direction: rtl;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+span.toptitle
+{
+
+    border: 0;
+    direction: rtl;
+    color: #0000ff;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: "ZFRAMEFONT";
+/*    visibility: hidden;*/
+    
+}
+
+table.FindSubmit {
+    background-color: #F91810;
+    border: 0;
+    direction: rtl;
+    position:static;
+    margin-bottom:0;
+    right:0;
+    bottom:10px;
+}
+
+
+
+
+input[type="button"].closebutton {
+    font-family: "ZFRAMEFONT";
+    background-image: url('../Images/Control/CloseForm.png');
+    background-repeat: no-repeat;
+    width:47px;
+    height:52px;
+
+
+}
+
+input[type="button"].NavigateButton {
+    font-family: "ZFRAMEFONT";
+    border: 1px solid #666666;
+    color: black !important;
+    height: 20px !important;
+   
+    min-width: 25px;
+   
+    /*background: -webkit-gradient(linear,left top, left bottom,from(white),to(#424a48),color-stop(0.03, #424a48));*/
+    background-color: #f7f7f7 !important;
+    border-radius: 4px !important;
+    padding: 10px 10px 20px 18px;
+    margin: 2px 2px 2px 2px ; 
+    vertical-align: middle;
+    text-align: center;
+}
+
+input[type="button"].NavigateButtonSeclect {
+    font-family: "ZFRAMEFONT";
+    color: #fff !important;
+    height: 20px !important;
+    min-width: 25px;
+   
+    border: 1px solid #666666;
+    background-color: #3366ff; !important;
+    border-radius: 4px !important;
+    padding: 10px 10px 20px 18px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.ZFormTableControl {
+    background-color: #c1f3f7;
+
+}
+
+
+.treeNode {
+    color: #070707;
+    font-family: "ZFRAMEFONT";    
+    width: 100%;
+}
+
+.rootNode
+{
+    font-family: "ZFRAMEFONT";
+    font-size: 18px;
+    padding:5px;
+    color: red;
+    background-color:#DDD;
+    border-radius:10px;
+    width: 100%;
+}
+
+.leafNode {
+    font-family: "ZFRAMEFONT";
+    font-weight: normal;
+    background-color: #FFFFFF;
+    color: #000000;    
+    font-size: small;
+    width: 100%;
+}
+
+.selectNode {
+    font-family: "ZFRAMEFONT";
+    font-weight: normal;    
+    background-color:#525252;
+    color: red;    
+    font-size: small;
+    width: 100%;
+}
+
+Td.ObjectControl {
+    vertical-align:bottom;
+    position:relative;
+    text-align: right;
+}
+
+Table.FormBinding Td.ObjectControl {
+    vertical-align:bottom;
+    position:relative;
+    text-align: Center;
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    /*float: left;*/
+}
+.Grid tr.pgr:last-child {
+    background: #ffffff ;
+  }
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+textarea {
+    font-family: "ZFRAMEFONT";
+     border: 1px solid #cccccc;        
+    font-family: "ZFRAMEFONT";
+    font-size: 11px;
+    height: 30px;
+    padding: .375rem 0.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;    
+    background-size: 10px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 250px;
+    
+}
+
+textarea.FULLTEXTARIA
+{
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;    
+    color:#ffffff;
+    width:400px;
+    height:200px; 
+    direction: ltr;
+    background-color: #000000;
+    
+    
+}
+
+input[type="button"] {
+	border: 1px solid #e6e6e6;
+	font-family: "ZFRAMEFONT";
+	font-size: 12px;
+	color: #787878  !important;
+	/* color: black; */
+	vertical-align: central;
+	/* background: -webkit-gradient(linear,left top, left bottom,from(white),to(#0C5FA5),color-stop(0.03, #72C6E4)); */
+	border-radius: 4px;
+}
+
+input[type="button"]:hover {
+    /*border: 1px solid #3399FF;
+    border: 1px solid black;*/
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    /*color: #ffcc00;*/    
+    /*background-color: #0066FF;*/
+    cursor:pointer;
+
+}
+input[type="checkbox"] {
+    cursor:pointer;
+}
+input[type="checkbox"]::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	border-radius: inherit;
+	transition: .2s;
+}
+input[type="checkbox"]::before {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18px' height='18px' fill='none' stroke-width='2px' stroke='white' stroke-linecap='round' viewBox='0 0 21 21'%3E%3Cpolyline points='5 10.75 8.5 14.25 16 6'%3E%3C/polyline%3E%3C/svg%3E");
+	transform: scale(0);
+}
+input[type="checkbox"] {
+	
+	cursor: pointer;
+}
+
+.Grid thead tr{
+    background: #fff;
+        width: 100%;
+        margin: 38px 0 0 0;
+        position: sticky;
+        top: 0px;
+        z-index: 3;
+        
+       
+}
+.Grid .pgr {
+	font-family: "ZFRAMEFONT";
+	/* background: linear-gradient(to bottom, #999999 26%, #999999 100%); */
+	position: sticky;
+	bottom: 0px;
+        background-color: #fff !important;
+        z-index: 3 !important;
+	/*border: 25px solid red;*/
+	/*border-radius: 5px 0px 5px 0px ;*/
+}
+
+
+
+div.FormGridDiv {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    max-height: 720px;
+    max-width: 100%;
+    
+    overflow: scroll;
+    scrollbar-color: #a19f9d transparent;
+    scrollbar-width: thin;
+    border: 2px solid #cccccc;
+    direction: rtl;
+ 
+    
+}
+
+iframe.MainView {
+    background-position: center center;
+    border-top: 1px solid #C0C0C0;
+    border-bottom: none;
+     border-left : none;
+     border-right: none;
+    background-image: url('../../Images/loader.gif');
+    background-repeat: no-repeat;
+    height: 832px !important;
+    width: 100%;
+    overflow: hidden;
+}
+iframe.MainViewWithOutloading {
+    background-position: center center;
+    border: 1px solid #C0C0C0;    
+    background-repeat: no-repeat;
+}
+
+.ToolBoxControl {
+	border-bottom: 4px solid #FFFFFF !important;
+}
+.ToolBoxControl:hover {
+	border-bottom: 4px solid #2266e3 !important;
+}
+div.ToolBox {
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;   
+    text-align: right;
+    /*background-color: #cccccc;*/
+    height: 60px;
+    margin-top: 0px;
+    position:fixed;
+      /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#67757b),color-stop(0.03, #89979D));*/
+    top:0;
+    right:0;    
+    width:100%;
+    z-index:3;
+    background-color: #fff !important;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom: #bebbb8 ;
+}
+
+#GridPanel {
+    padding-top: 24px;
+}
+
+
+div.ShowObjectDive div.ToolBoxChild {
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    text-align: right;
+    background-color:#fff;
+    height: 60px;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+
+img.ToolBoxControl {
+    cursor: pointer;
+    -webkit-filter: grayscale(0%);
+    z-index:3;
+
+}
+
+img.ToolBoxControl:hover {
+/*//-webkit-filter: hue-rotate(180deg);*/
+     
+}
+
+input.ToolBoxControl {
+    -webkit-filter: grayscale(0%);
+}
+
+input.ToolBoxControl:hover {
+  /*// -webkit-filter: hue-rotate(180deg);*/
+}
+
+input[type="image"]:disabled{
+    border: 0px solid #FF9933;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+span.split {
+    color: #FFFFFF;
+}
+
+div.TreePanle {
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+
+Input.ChildObjectButton {
+    
+        font-family: "ZFRAMEFONT";
+        font-size: 12px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        background-color: #FF3300;
+
+}
+Input.ChildObjectButton:hover {
+    
+        font-family: "ZFRAMEFONT";
+        font-size: 12px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        background-color: #AA3300;
+}
+
+
+/* Menu CSS*/
+.MenuGroup {
+    background-color: #FFFFFF;
+    color: #000;
+    text-align: right;
+}
+
+.MenuItem {
+    border-style: dotted;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    color: black;
+    font-family: "ZFRAMEFONT";
+    font-size: 13px;
+    text-align: right;
+    cursor: pointer;
+    width: 230px;
+    height: 30px;
+    border-bottom-color: #000000;
+}
+
+.MenuItemHover {
+    background-color: #660033;
+    color: white;
+    font-family: "ZFRAMEFONT";
+    font-size: 13px;
+    height: 30px;
+    text-align: right;
+    width: 230px;
+    cursor: pointer;
+    border-bottom-color: #000000;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.MenuItemDown {
+    border: 1px dotted #000000;
+    background-color: #333333;
+    color: white;
+    font-family: "ZFRAMEFONT";
+    font-size: 13px;
+    cursor: pointer;
+    width: 230px;
+    height: 30px;
+    text-align: right;
+}
+/*White*/
+
+.MenuGroupBlack {
+    background-color: #110c0c;
+    color: #FFFFFF;
+    text-align: right;
+    font-size: 13px;
+    width: 230px;
+
+}
+.MenuItemBlack {
+    background-color: #484848;
+    color: #FFFFFF;
+    font-family: "ZFRAMEFONT";
+    font-size: 13px;
+    text-align: right;
+    cursor: pointer;
+    width: 230px;
+}
+
+.MenuItemBlackHover {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "ZFRAMEFONT";
+    font-size: 13px;
+    text-align: right;
+    cursor: pointer;
+    width: 230px;
+}
+
+.MenuItemDownBlack {
+    background-color: #110c0c;
+    color: white;
+    font-family: "ZFRAMEFONT";
+    font-size: 13px;
+    cursor: pointer;    
+    text-align: right;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #800000;
+    width: 230px;
+}
+
+
+/* Menu CSS*/
+
+ul.searchitem {
+
+
+    list-style-type: square;
+    direction:rtl;
+    width:150px;
+}
+
+li.searchitemlist {
+    font-family: "ZFRAMEFONT";
+    background-color: #333333;
+    cursor: pointer;
+    color:#fff;
+    font-size: small;
+    display:inline-block;
+    direction:rtl;
+    width:150px;
+
+}
+
+li.searchitemlistselected {
+    font-family: "ZFRAMEFONT";
+    background-color: #ffff99;
+    cursor: pointer;
+    color:#000;
+    font-size: small;
+    /*display:inline-block;*/
+    direction:rtl;
+    width:150px;
+
+}
+
+
+li.searchitemlist:hover {
+    font-family: "ZFRAMEFONT";
+    background-color: #82d1e7;
+    cursor: pointer;
+    font-size: small;
+    display: inline-block;
+    direction: rtl;
+    width: 150px;
+    color:black;
+}
+
+li.searchitemlist::selection {
+    font-family: "ZFRAMEFONT";
+    background-color: #CCCCCC;
+    cursor: pointer;
+    font-size: small;
+    display:inline-block;
+    direction:rtl;
+    width:200px;
+}
+
+div.divsearch {
+    width:200px;
+    border: 1px solid transparent;
+    position: absolute;
+    background-color: transparent;
+    font-family: "ZFRAMEFONT";
+    font-size: 9px;
+    z-index: 3;
+    text-align: right;
+    opacity: 0.9;
+}
+
+Input.LookUpText {
+    border: 1px solid #000000;
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    width: 200px;
+    background-color: #FBFBFB;
+
+}
+.txtUserName{
+/*     background-color: #dde3ec !important;
+     text-align: center !important;
+     width:245px !important;
+     height:35px !important;
+     border-radius: 2px;*/
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f2f2f3 !important;
+  text-align: center !important;
+  
+  background: url('../Images/Control/User.png') no-repeat scroll 210px 10px;
+  background-size: 20px 20px;
+/*  padding-left:120px;*/
+}
+.txtPassword{
+/*     background-color: #dde3ec !important;
+     text-align: center !important;
+     width:245px !important;
+     height:35px !important;
+     border-radius: 2px;*/
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f2f2f3 !important;
+  text-align: center !important;
+  
+  background: url('../Images/Control/Password.jpg') no-repeat scroll 210px 10px;
+  background-size: 22px 22px;
+/*  padding-left:120px;*/
+}
+.LoginEnter{
+     width:130px !important;
+     height:35px !important;
+     background-color: #333333 !important;
+     color:white;     
+}
+
+.LoginEnter:hover{
+     width:130px !important;
+     height:35px !important;
+     background-color: #000000 !important;
+     color:white;     
+}
+Input.InputText {
+    font-family: "ZFRAMEFONT";
+    display: inline;
+    width: 250px;
+    padding: .37rem .75rem;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+
+
+Input.InputTextGridSearch {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction:inherit;
+    background-color:fff;
+    min-width: 150px;
+    width: 100%;
+    height:25px; 
+}
+
+.InputTextGridSearch {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction:inherit;
+    background-color:#ffffff;
+    width:100%;
+    height:20px; 
+
+}
+
+
+
+Input.InputTextSmall {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction:rtl;
+    width:50px;
+
+}
+Table.FindBoxtable {
+   /* border: 1px solid #000000;*/
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    width: 258px;
+
+}
+
+input.textboxFindBoxtable {
+    /*border: 1px solid #000000;*/
+font-family: "ZFRAMEFONT";
+height: 30px ;
+padding: .375rem 0.75rem .375rem .75rem;
+line-height: 1.5;
+color: #495057;
+vertical-align: middle;
+border: 1px solid #ced4da; 
+border-radius: .25rem !important;
+background-size: 10px 10px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 200px;
+}
+
+input.commandFindBoxtable {
+    /*border: 1px solid #000000;*/
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background:  url("../Images/Control/findObjectpic.png") no-repeat left .25rem center;   
+    background-size: 18px 18px !important;
+}
+
+
+input.textboxSearchText {
+    font-family: "ZFRAMEFONT";
+height: 30px;
+padding: .375rem 0.75rem .375rem .75rem;
+line-height: 1.5;
+color: #495057;
+vertical-align: middle;
+background: #fff url("../Images/Control/searchtext.png") no-repeat left .75rem center;
+background-size: 10px 10px;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 250px;
+}
+
+
+
+input[type="button"].DeleteButton {
+   
+   /* font-family: "ZFRAMEFONT";
+        font-size: 12px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        background-color: #cc0000;*/
+     font-family: "ZFRAMEFONT";
+    color: #383333;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    color: #fff;
+    cursor: pointer;
+    height:30px;
+    width: 50px;
+    background-color: #ecabab;
+    color: #5b2525 !important;
+    border-radius: .25rem !important;
+    border: 1px solid #7d2222   !important;
+    text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+    
+}
+
+input[type="button"].DeleteButton:hover {
+   
+    /*font-family: "ZFRAMEFONT";
+        font-size: 12px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        background-color: #ff9999;*/
+     border: none !important;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+/*    background:-webkit-gradient(linear,left top, left bottom,from(white),to(#c8313b),color-stop(0.03,#d04b36 ));*/
+background-color: #c47474;
+border: 1px solid #7d2222   !important;
+}
+
+
+
+input[type="button"].UpdateButton {
+    border: 1px solid #C0C0C0;
+    font-family: "ZFRAMEFONT";
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background:-webkit-gradient(linear,left top, left bottom,from(white),to(#0E0),color-stop(0.03, #0A0));
+    cursor: pointer;
+    height: 30px;
+    width: 50Px;
+}
+
+input[type="button"].UpdateButton:hover {
+    border: 1px solid #C0C0C0;
+    font-family: "ZFRAMEFONT";
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+     background:-webkit-gradient(linear,left top, left bottom,from(white),to(#0A0),color-stop(0.03, #0e0));
+    cursor: pointer;
+    height: 30px;
+    width: 50Px;
+}
+
+
+input[type="submit"].NewItemAdd {
+        /*()font-family: "ZFRAMEFONT";
+        font-size: 11px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        background-color: #00cc00;*/
+            font-family: "ZFRAMEFONT";
+    color: #383333;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    color: #fff;
+    cursor: pointer;
+    height:30px;
+    width: 50px;
+    background-color: #e7fbe6;
+    border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+}
+
+input[type="submit"].NewItemAdd:hover {
+        /*font-family: "ZFRAMEFONT";
+        font-size: 11px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        background-color: #009966;*/
+    border: 1px solid #24AA21;
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background:#81c7a2 ; 
+    border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+}
+
+
+input[type="submit"].CommandSave {
+    border: 1px solid #C0C0C0;
+    font-family: "ZFRAMEFONT";
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #c1f3f7;
+    cursor: pointer;
+    height: 30px;
+    width: 130Px;
+}
+
+
+
+#closeandapplay {
+    border: 1px solid #24AA21;
+    font-family: "ZFRAMEFONT";
+    color: #ffffff !important;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    color: #fff;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    background-color: #0066FF;
+    
+}
+
+#closeandapplay:hover {
+    border: 1px solid #24AA21;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF !important;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #6666ff;
+}
+
+
+input[type="submit"].CommandSave:hover {
+    border: 1px solid #C0C0C0;
+    font-family: "ZFRAMEFONT";
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    height: 30px;
+    width: 130Px;
+}
+
+
+Tr.BindngListExistItem {
+
+}
+
+
+Tr.BindngListNewItem {
+    background-color: #ffffff;
+}
+
+Tr.BindngListNewItem  Table.FormBinding
+{
+/*    background-color: #ccffff;*/
+}
+
+
+Tr.BindngListDeleteItem {
+
+    opacity:0.3;
+}
+
+Tr.BindngListUpdateItem {
+
+    
+    background-color: #ffffff;
+}
+
+#closeandapplay:disabled {
+    border: 1px solid #808080;
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: #CCCCCC;
+}
+
+
+
+.ChildGrid {
+    border: 2px solid #DEDEDE;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 0 0 0 ;
+    font-family: "ZFRAMEFONT";
+    color: #474747;
+    direction: rtl;
+    font-size: x-small;
+}
+
+.ChildGrid td {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    border: 1px solid #FFFFFF;
+    caption-side: top;
+    margin-left: 10px;
+}
+
+
+
+.ChildGrid th {
+    font-family: "ZFRAMEFONT";
+    color: white !important;
+    /*background: #c1f3f7 repeat-x top;*/
+    background: #4d82a8;
+    font-size: small;
+    height: 10px;
+    font-weight: bold;
+}
+
+
+.ChildGrid th a {
+    color: white;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    height: 10px;
+    font-weight: bold;
+}
+.ChildGrid th a:hover {
+    color: white;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    height: 10px;
+    font-weight: bold;
+}
+.ChildGrid .alt{
+    font-family: "ZFRAMEFONT";      
+    font-size: x-small;
+    height:10px;
+
+}
+
+
+.ChildGrid .select {
+    font-family: "ZFRAMEFONT";
+    background: #FFCC66 repeat-x top;
+    font-size: x-small;
+    height: 10px;
+}
+
+
+.ChildGrid .select input[type="button"].ChildGridButton {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    background-color: #4E4E4E;
+    color: #FFFFFF;
+}
+
+.ChildGrid .select input[type="button"].ChildGridButton:hover {
+    font-family: "ZFRAMEFONT";
+    font-size: x-small;
+    height: 25px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+
+input[type="button"].ChildGridButton {
+    font-family: "ZFRAMEFONT";    
+    font-size: x-small;
+    height: 25px;
+}
+
+input[type="button"].ChildGridButton:hover {
+    font-family: "ZFRAMEFONT";    
+    font-size: x-small;
+    height: 25px;
+}
+
+
+.ChildGrid tr {
+    border-color: #CCCCCC;
+    border-style: none none double none;
+    border-width: 1px;
+    font-family: "ZFRAMEFONT";
+    background: #FFFFFF repeat-x top;
+    font-size: x-small;
+    height: 25px;
+
+}
+
+.ChildGrid tr:hover {
+    font-family: "ZFRAMEFONT";
+    background: #FFCC99 repeat-x top;
+    font-size: x-small;
+    height: 25px;
+}
+
+
+
+
+.ChildGrid .pgr {
+    font-family: "ZFRAMEFONT";
+    background: #c1f3f7 url(Images/grid-pgr.png) repeat-x top;
+
+
+}
+.ChildGrid .pgr table {  font-family: "ZFRAMEFONT"; }
+.ChildGrid .pgr td {font-family: "ZFRAMEFONT"; border-width: 0;   font-weight: bold; color: #fff; line-height: 12px; height:20px; width:20px; text-align:center;}
+.ChildGrid .pgr tr {font-family: "ZFRAMEFONT"; border-width: 0;   font-weight: bold; color: #fff; line-height: 12px; height:20px; width:20px; text-align:center;}
+.ChildGrid .pgr tr:hover {font-family: "ZFRAMEFONT"; border-width: 0;   font-weight: bold; color: #fff; line-height: 12px; height:20px; width:20px; text-align:center;}
+.ChildGrid .pgr td:hover {
+    font-family: "ZFRAMEFONT";
+    border-width: 0;
+    font-weight: bold;
+    color: #fff;
+    line-height: 12px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    background-color: #c1f3f7;
+}
+.ChildGrid .pgr span {
+    color: #009933;
+    height: 20px;
+    width: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+.ChildGrid .pgr a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    width: 20px;
+    font-size: small;
+}
+.ChildGrid .pgr a:hover {
+    color: #000;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    width: 20px;
+    font-size: small;
+}
+
+
+ALINK 
+{
+    color: #000;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    width: 20px;
+    font-size: small;
+
+}
+
+ALINK:hover 
+{
+    color: #000;
+    text-decoration: none;
+    font-family: "ZFRAMEFONT";
+    width: 20px;
+    font-size: small;
+
+}
+
+
+div.dropdowntree
+{
+    position: fixed;
+    background-color: #fff;
+    width:273px;
+    height:250px;
+    overflow: auto;
+    z-index: 3;
+}
+
+
+Table.SiavashCSS
+{
+    width: 30px;
+}
+
+Input.SiavashCSS
+{
+    width: 30px;
+}
+div.SiavashCSS
+{
+    width: 30px;
+}
+
+
+img.imgNotify
+{
+    width:30px;
+    height:30px;
+}
+
+span.msgNotify
+{
+    font-family: "ZFRAMEFONT";
+    color: #ff6a00;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;   
+}
+
+span.msgcount
+{
+    font-family: "ZFRAMEFONT";
+    color: #FF9933;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;   
+}
+
+
+ul.Notify {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    background-color: #f1f1f1;
+
+
+}
+
+
+div.NotifyPanel
+{
+    width: 550px;
+    position:fixed;
+    top: 0px;
+    left: -50px;
+    opacity: 0.9;
+    direction:rtl;
+}
+
+
+
+.page-container {
+    margin: 0px;
+}
+
+
+/* horizontal panel*/
+
+.panel-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid silver;
+    overflow: hidden;  
+    /* avoid browser level touch actions */
+    xtouch-action: none;
+}
+
+.panel-left {
+    flex: 0 0 auto;
+    /* only manually resize */    
+    width: 80%;
+    min-height: 200px;
+    min-width: 150px;
+    white-space: nowrap;
+    background: #fff;
+    color: white;
+}
+
+.splitter {
+    flex: 0 0 auto;
+    width: 3px;    
+    background-color: #000;
+    min-height: 200px;
+    cursor: col-resize;  
+}
+
+.panel-right {
+    flex: 1 1 auto;
+    /* resizable */
+    padding: 3px;
+    width: 300px;
+    /*min-height: 200px;*/
+    /*min-width: 200px;*/
+    /*background: #FFF;*/
+    /*background: linear-gradient(to left, #999999 , #ffffff);*/
+    background: linear-gradient(to left, #fff , #52bf74);
+    /*background: linear-gradient(to left, #f1ffe7 , #f1ffe7);*/
+}
+
+
+
+
+.panel-rightE {
+    flex: 0 0 auto;
+    /* only manually resize */
+    padding: 5px;
+    width: 80%;
+    min-height: 200px;
+    min-width: 150px;
+    white-space: nowrap;
+    background: #fff;
+    color: white;
+}
+
+.splitter {
+    flex: 0 0 auto;
+    width: 3px;    
+    background-color: #000;
+    min-height: 200px;
+    cursor: col-resize;  
+}
+
+.panel-leftE {
+    flex: 1 1 auto;
+    /* resizable */
+    padding: 3px;
+    width: 300px;
+    min-height: 200px;
+    min-width: 200px;
+    background: #FFF;
+}
+
+
+
+/* vertical panel */
+
+.panel-container-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border: 1px solid silver;
+    overflow: hidden;
+}
+
+.panel-top {
+    flex: 0 0 auto;
+    /* only manually resize */
+    padding: 10px;
+    height: 150px;
+    width: 100%;
+    white-space: nowrap;
+    background: #838383;
+    color: white;
+}
+
+.splitter-horizontal {
+    flex: 0 0 auto;
+    height: 18px;  
+    cursor: row-resize;
+}
+
+.panel-bottom {
+    flex: 1 1 auto;
+    /* resizable */
+    padding: 10px;
+    min-height: 200px;
+    background: #eee;
+}
+
+
+div.DeveloperMode
+{
+    background:  url(../Images/DeveloperMode.png)  top;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 37px;
+    width: 150px;
+    z-index: 1000;
+}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;    
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+input.tablinks {
+
+    background-color: inherit;    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px ;
+    border: 1px solid #67757b;
+    width:200px; 
+    height: 30px;
+    border-style: solid solid solid none;
+    color: #ffffff;
+    /*background-color: #67757b;*/
+   /*background: #3b7ba8;*/
+   background: linear-gradient(to left, #000000 , #333333);
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#006666),color-stop(0.03, #009999));*/
+    /*background-color: #67757b;*/
+    
+
+}
+
+
+input.tablinksclose {
+    background-color: inherit;    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px ;
+     border: 1px solid #67757b;
+    width:20px; 
+    height: 30px;
+    /*background: #3b7ba8;*/
+    background: linear-gradient(to left, #000000 , #333333);
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#006666),color-stop(0.03, #009999));*/
+    color:black;
+    
+   
+}
+
+input.tablinksclose:hover {
+    /*background-color: inherit;*/    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px ;
+    border: 1px solid #67757b;
+    width:20px; 
+    height: 30px;
+    /*background-color: #cc0000;*/
+    color:black;
+    
+}
+
+
+/* Change background color of buttons on hover */
+
+
+input.tablinksNormal {
+    background-color: inherit;    
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px ;
+    border: 1px solid #67757b;
+    width:200px; 
+    height: 30px;
+    border-style: solid solid solid none;
+    color: #fff;
+    border-radius: 0px 15px 0px 0px;
+     /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#67757b),color-stop(0.03, #67757b));*/
+     background-color: #adadad;
+}
+
+/* Change background color of buttons on hover */
+
+/* Create an active/current tablink class */
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 0px 0px;
+    border: 0px solid #67757b;
+    border-top: none;
+/*    background-color: #67757b;*/
+background-color: #e1e7e9;
+} 
+
+
+td.TabButtonContent
+{
+    background-color: #f9f2f4;
+
+}
+
+
+
+button.accordion {
+    background-color:#666666 ;
+    color: #FFF;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;    
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-width:1px;  
+    border-style:solid solid solid solid;
+    border-color: #000;
+    font-family: "ZFRAMEFONT";
+}
+
+button.accordion:hover
+{
+    background-color: #000;
+    font-family: "ZFRAMEFONT";
+}
+
+button.accordion.active {
+    background-color:#666666 ;
+    font-family: "ZFRAMEFONT";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+img.expand 
+{
+    cursor:  pointer;   
+}
+
+
+td.listObjectHeaderF {
+    
+       /*background: linear-gradient(to left, #006666, #9fc5c5);*/
+     /*background-color: #5d9d9d;*/
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#5d9d9d),color-stop(0.03, #009999));*/
+    background-color: #000000;
+    /*border: 1px solid #003b64 !important;*/
+    color:black !important;
+    cursor:  pointer;   
+/*    border-radius:5px;*/
+}
+
+td.listObjectHeaderF span.Title
+{
+    font-family: "ZFRAMEFONT";
+    color: white;
+    font-size: 11px;
+    margin-right:18px; 
+    font-weight:bold;  
+    background-color:transparent;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
+}
+
+
+table.TESTFORMC {
+    padding: 0px;    
+    background-color: #ffcccc;
+    caption-side: top;
+    color: #FFFFFF;
+    width: 700px;
+    margin: 0 0 0 0;
+    box-shadow: 10px 10px 5px #888;
+    empty-cells:hide;
+}   
+
+table.TESTFORMC td table 
+{
+    border-style: none;    
+    background-color: #99ff00;    
+}
+
+table.TESTFORMC td table td 
+{
+    border-style: none;        
+}
+
+table.TESTFORMC.listObjectHeaderF
+{
+    background-color: #009933;
+}
+
+textarea.txtcommnad {
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;    
+    color:#474747;
+    width:600px;
+    height:100px;
+    direction:ltr;    
+}
+
+textarea.txtcommnadOneLine {
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;    
+    color:#474747;
+    width:700px;
+    height:30px;
+    direction:ltr;    
+}
+
+textarea.InputText {
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;    
+    color:#474747;
+    width:100%;
+    height:100px;
+    border-radius: 3px;
+    
+}
+
+
+textarea.InputTextAddress {
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;    
+    color:#474747;
+    width:700px;
+    height:70px;
+    
+}
+
+Input.Time
+{
+    direction:ltr;    
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;    
+    color:#000;
+    width:150px;
+    height: 27px;
+    background-color: #9999ff;
+}
+
+Table.DiagnosticTable
+{
+ 
+    padding: 0px;    
+    background-color: #ddf5f9;
+    caption-side: top;
+    color: #FFFFFF;
+    width: 700px;
+    margin: 0 0 0 0;    
+    empty-cells:hide;
+}
+
+
+table.StatusForm {
+    padding: 0px;    
+    background-color: #cccccc;
+    caption-side: top;
+    color: #FFFFFF;
+    width: 1300px;
+    margin: 0 0 0 0;
+    box-shadow: 10px 10px 5px #2841891a;
+    empty-cells:hide;
+    height: 400px;
+}   
+
+
+select.PROCESSLIST {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    width:300px;
+    height:300px; 
+    text-decoration: none;
+    direction:rtl;
+}
+
+
+
+Input.InputTextLeft {
+    /*font-family: "courier new";*/
+    font-family: ZFRAMEFONT;
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction:ltr;
+    width:150px;
+    /*height:30px;*/ 
+        
+        
+
+}
+
+
+table.StatusFormProcess {
+    padding: 0px;    
+    background-color: #e4ffd7;
+    caption-side: top;
+    color: #FFFFFF;
+    width: 1300px;
+    margin: 0 0 0 0;
+    box-shadow: 10px 10px 5px #2841891a;
+    empty-cells:hide;
+    height: 400px;
+}   
+
+
+textarea.CommnadPrompt {
+    font-family: "courier new";
+    font-size: 12px;    
+    color:#ffffff;
+    background-color: #000;
+    width:744px;
+    height:200px;
+    direction:ltr;
+    
+}
+
+textarea.InputTextLeft {
+    font-family: "courier new";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction:ltr;
+    width:150px;
+    height:100px; 
+
+}
+
+
+span.LinkLabelTree {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+
+span.LinkLabelDate {
+    font-family: "courier new";
+    color: black;
+    font-size: 11px;
+    background-color:transparent;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+span.ErrorLable
+{
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;    
+    color: #F00;
+}
+
+
+
+input.GridCustomization
+{    
+    background-image: url('../Images/Control/setting.png');
+    background-size:cover;
+    width:30px; 
+    height:30px; 
+}
+
+input.GridCustomizationPrint
+{    
+    background-image: url('../Images/Control/ExcelGrid.png');
+    background-size:cover;
+    width:30px; 
+    height:30px; 
+}
+
+input.moveup
+{
+    width:15px; 
+    height:15px; 
+    background-image: url('../Images/Control/up.png');
+    background-size:cover;
+    
+}
+
+input.movedown
+{
+    width:15px; 
+    height:15px; 
+    background-image: url('../Images/Control/down.png');
+    background-size:cover;
+}
+
+
+input.circletext
+{
+    border-radius: 50%;                        
+    width: 5px;
+    height: 5px;
+    padding: 8px;
+    background: #FFF;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+}
+
+Input.InputTextEnCenter {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction:inherit;
+    text-align: center;
+    width:150px;
+    height: 25px;   
+    background-color: #f3f3f6;
+
+}
+
+Input.DateText
+{
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    direction:ltr;
+    text-align: center;
+    width:150px;
+    height: 25px;   
+    background-color: #f3f3f6;
+}
+
+
+input.ATMSTATUS
+{
+    border-radius: 50%;                        
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    background: #FFF;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 32px Arial, sans-serif;  
+}
+
+
+span.TitleEn {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+}
+
+
+span.ButtonLable {
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+    cursor:  pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+span.ButtonLable.active {
+    font-family: "ZFRAMEFONT";
+    color: #0066FF;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+    cursor:  pointer;
+}
+
+span.TitleLookupTableBox
+{
+    font-family: "ZFRAMEFONT";
+    color: #b9b9e0;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+    
+}
+
+
+img.ImagePageCount
+{
+    width:25px;
+    height:25px;
+    
+}
+
+
+
+
+table.ZFormTableStatic {
+    padding: 0px;    
+/*    background-color: #f9f9f9;*/
+background-color:white;
+    caption-side: top;
+    color: #FFFFFF;
+    width: 900px;
+    margin: 0 0 0 0;
+    box-shadow: 10px 10px 5px #2841891a;
+    empty-cells:hide;
+    border: 1px solid #3b7ba8 !important;
+}   
+
+table.ZFormTableStatic td table {
+    border-style: none;        
+}
+
+table.ZFormTableStatic td table td {
+    border-style: none;        
+}
+
+
+table.ZFormTableStatic td {
+    border: 0px solid #808080;
+    caption-side: top;
+}
+
+
+
+#moveTbl {
+    position: absolute;
+    z-index: 8;
+    /*background: linear-gradient(to left, #ffffff , #EEE);*/    
+    /*border: 0px solid #d3d3d3;*/
+}
+
+#NotMoveTbl {
+    position: fixed !important;
+}
+
+#moveTblheader {
+    /*padding: 10px;*/
+    cursor: move;
+    z-index: 9;
+    padding: 10px;
+    color: #fff;
+}
+
+ .TopMenuDivid
+{
+    width: 100%;
+    height: auto;   
+    text-align: center;    
+    cursor: pointer;
+   
+	/*background: linear-gradient(to right, #769db4 , #3a3d37);*/
+        background: linear-gradient(to left, #999999 , #ffffff);
+
+}
+.TopTextDivid
+{
+    font-size: 21px;
+    font-family: "IRANSans";
+    color: #fafafa;
+}
+.ImgDivid
+{
+    width: 30px;
+    cursor: pointer;
+    float: left;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+.anchor{
+    margin-top: 120px;
+    visibility: hidden;
+    transform: rotate(90deg);
+    padding: 20px;
+    background: linear-gradient(to right, #769db4 , #3a3d37);
+    border-radius: 0px 0px 0px 10px;
+    cursor: pointer;
+    position: fixed;
+    right: -63px;
+    opacity: 0.7;
+    font-family: ZFRAMEFONT;
+
+
+}
+
+Table.Lookup_Goods01
+{
+	/* Background-color: #3399CC;*/
+}
+
+input.InputText1447_1
+{
+	Width:100px;
+}
+input.InputText1447_2
+{
+	Width:200px;
+}
+input.InputText1447_3
+{
+	Width:50px;
+}
+
+input.InputText1447_4
+{
+    Width:80px;
+}
+
+
+input.InputText13686_3
+{
+    Width:50px;        
+ 
+}
+
+input.InputText13686_4
+{
+    Width:50px;        
+ 
+}
+
+
+Input.CmdSaveDoc1 {
+    /*border: 1px solid #24AA21;*/
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    background-color: #e7fbe6;
+    border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#006633),color-stop(0.03, #73be99));*/
+   
+     /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#006633),color-stop(0.03, #00cc66));
+     /*background: linear-gradient(to left, #095035 , #52937a);*/
+}
+Input.CmdCancelDoc1 {
+    /*border: 1px solid #24AA21;*/
+    font-family: "ZFRAMEFONT";
+    color: #383333;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    color: #fff;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    background-color: #ecabab;
+    color: #5b2525 !important;
+    border-radius: .25rem !important;
+    border: 1px solid #7d2222   !important;
+     /*background: linear-gradient(to left, #5b070d , #d77073);*/
+}
+
+Input.CmdCancelDoc1:hover {
+    border: none !important;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+/*    background:-webkit-gradient(linear,left top, left bottom,from(white),to(#c8313b),color-stop(0.03,#d04b36 ));*/
+background-color: #c47474;
+border: 1px solid #7d2222   !important;
+}
+
+Input.CmdSaveDoc1:hover {
+    border: 1px solid #24AA21;
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background:#81c7a2 ; 
+    border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+}
+Input.CmdSaveDoc1:disabled  {
+    border: 1px solid #000000;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #E00;
+}
+
+Input.cmdCommand {
+        font-family: "ZFRAMEFONT";
+        font-size: 12px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        background-color: #99ccff  !important;
+        border: 1px solid #9999ff !important;
+        color: #000000 !important;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        height:30px;
+        width: 150px; 
+   
+}
+
+Input.cmdCommand:hover {
+        font-family: "ZFRAMEFONT";
+        font-size: 12px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        background-color: #E5F1FB  !important;
+        border: 1px solid #9999ff !important;
+        color: #330099 !important;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        height:30px;
+        width: 150px;
+}
+.ImgDivid
+{
+    width: 30px;
+    cursor: pointer;
+    float: left;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+.anchor{
+    margin-top: 120px;
+    visibility: hidden;
+    transform: rotate(90deg);
+    padding: 20px;
+    background-color: #006600;
+    border-radius: 0px 0px 0px 10px;
+    cursor: pointer;
+    position: fixed;
+    right: -63px;
+    opacity: 0.7;
+    font-family: B koodak;
+
+
+}
+
+.dropbtn {
+    /*background-color: #4CAF50;*/
+    /*background: linear-gradient(to left, #003b64 , #4d82a8);*/
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#0C5FA5),color-stop(0.03, #72C6E4));
+    color: white !important;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 300px;
+    cursor: pointer;
+    background:-webkit-gradient(linear,left top, left bottom,from(white),to(#0C5FA5),color-stop(0.03, #72C6E4));*/
+    border: none;
+    width: 250px;
+    height:30px;
+    cursor: pointer;
+    font-family: "ZFRAMEFONT";
+    display: inline;
+    padding: .37rem .75rem;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #495057;
+    background: #fff url("../Images/Control/down.png") no-repeat left .75rem center;   
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-size: 8px 10px;
+    color:white !important;
+      margin-right: -2
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    /*background-color: #3e8e41;
+  
+    border: 1px solid white !important;
+    font-family: "ZFRAMEFONT";
+    /*color: #FF0;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background:-webkit-gradient(linear,left top, left bottom,from(white),to(#72C6E4),color-stop(0.03,#0C5FA5 ));*/
+   
+
+}
+
+
+/* The search field */
+.ComboSearchInput {
+  border-box: box-sizing;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width:220px !important; 
+}
+
+/* The search field when it gets focus/clicked on */
+.ComboSearchInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 250px;
+    max-height: 300px;
+    border: 1px solid #ddd;
+    z-index: 10000;
+    overflow-x: auto;
+}
+
+/* Links inside the dropdown */
+.dropdown-content span {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content span:hover {
+    /*background-color: #f1f1f1*/
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+
+input.DButton {
+    visibility:hidden; 
+}
+
+  Input.ConfirmationButton:style
+    {
+        visibility: hidden;
+        display:none;
+        left:-500;
+        top:-500;
+    }
+
+    
+    input.InputText15488_4
+    {
+        width: 50px;
+    }
+    input.InputText15488_3
+    {
+        width: 50px;
+    }
+    
+     input.InputText15488_2
+    {
+        width:200px;
+    }
+    input.InputText15488_1
+    {
+        width:80px;
+    }
+    
+    
+    
+  
+    
+    input.InputText15478_4
+    {
+        width: 50px;
+    }
+    input.InputText15478_3
+    {
+        width: 50px;
+    }
+      input.InputText15478_2
+    {
+        width:200px;
+    }
+    
+      input.InputText15478_1
+    {
+        width:80px;
+    }
+    
+    
+   
+      input.InputText13686_2
+    {
+        width:200px;
+    }
+    
+      input.InputText13686_1
+    {
+        width:80px;
+    }
+    
+    
+   
+    
+     input.InputText15490_4
+    {
+        width: 50px;
+    }
+    input.InputText15490_3
+    {
+        width: 50px;
+    }
+      input.InputText15490_2
+    {
+        width:200px;
+    }
+    
+      input.InputText15490_1
+    {
+        width:80px;
+    }
+    
+    
+    
+    input.InputText9233_4
+    {
+        width: 50px;
+    }
+    input.InputText9233_3
+    {
+        width: 50px;
+    }
+      input.InputText9233_2
+    {
+        width:200px;
+    }
+    
+    
+      input.InputText9233_1
+    {
+        width:80px;
+    }
+
+    input.InputText15492_4
+    {
+        width: 50px;
+    }
+    input.InputText15492_3
+    {
+        width: 50px;
+    }
+      input.InputText15492_2
+    {
+        width:200px;
+    }
+    
+      input.InputText15492_1
+    {
+        width:80px;
+    }
+    
+input.InputText15085_1
+{
+	Width:100px;
+}
+input.InputText15085_2
+{
+	Width:200px;
+}
+input.InputText15085_3
+{
+	Width:50px;
+}
+
+input.InputText15085_4
+{
+    Width:80px;
+} 
+
+
+input.InputText15093_1
+{
+	Width:100px;
+}
+input.InputText15093_2
+{
+	Width:200px;
+}
+input.InputText15093_3
+{
+	Width:50px;
+}
+
+input.InputText15093_4
+{
+    Width:80px;
+}
+
+input.InputText15541_1
+{
+	Width:100px;
+}
+input.InputText15541_2
+{
+	Width:200px;
+}
+input.InputText15541_3
+{
+	Width:50px;
+}
+
+input.InputText15541_4
+{
+    Width:80px;
+}
+
+input.InputText15532_1
+{
+	Width:100px;
+}
+input.InputText15532_2
+{
+	Width:200px;
+}
+input.InputText15532_3
+{
+	Width:50px;
+}
+
+input.InputText15532_4
+{
+    Width:80px;
+}
+
+input.InputText15589_1
+{
+	Width:100px;
+}
+input.InputText15589_2
+{
+	Width:200px;
+}
+input.InputText15589_3
+{
+	Width:50px;
+}
+
+input.InputText15589_4
+{
+    Width:80px;
+}
+
+input.InputText15580_1
+{
+	Width:100px;
+}
+input.InputText15580_2
+{
+	Width:200px;
+}
+input.InputText15580_3
+{
+	Width:50px;
+}
+
+input.InputText15580_4
+{
+    Width:80px;
+}
+
+input.InputText15638_1
+{
+	Width:100px;
+}
+input.InputText15638_2
+{
+	Width:200px;
+}
+input.InputText15638_3
+{
+	Width:50px;
+}
+
+input.InputText15638_4
+{
+    Width:80px;
+}
+
+
+
+input.InputText333_3
+{
+    Width:50px;
+}
+.textboxFindBoxtable
+{
+    Width:50px;
+}
+
+.jconfirm-box{
+   width: 400px !important;
+}
+.jconfirm .jconfirm-box div.jconfirm-title-c{
+   line-height: 20px;
+   cursor: default;
+   font-size: 12px;
+   color: #2e86c1 ;
+   font-family: "ZFRAMEFONT";
+   font-weight: bold;
+  text-align: center;
+}
+
+.jconfirm.jconfirm-white .jconfirm-bg, .jconfirm.jconfirm-light .jconfirm-bg {
+    background-color: #030202;
+    opacity: 0.8;
+}
+
+.jconfirm .jconfirm-box {
+
+    margin-bottom: 100px !important;
+}
+
+
+
+
+
+
+        .CheckBoxTitle{
+            
+     font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    background-color:transparent;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+        }
+   
+        
+   .Aclass{
+    /*border: 1px solid #000000 !important;*/
+    background-color: #FFFFFF !important;
+    caption-side: top !important;
+    color: #FFFFFF !important;
+    width: 20% !important;  
+        }
+     
+        
+        
+/*My Code*/
+a.canvasjs-chart-credit {
+    color: white !important;
+}
+.canvasjs-chart-tooltip {
+    left: -80px !important;
+}
+
+.WORKTIME {
+    background-color : #FFFFFF;
+}
+.QCSEND {
+    background-color : #B0BEC5;
+    height: 30px;
+}
+/*End Of My Code*/
+
+
+.ErrLbl {
+    font-family: "ZFRAMEFONT";
+    color:red !important;
+    font-size: 12px;
+    background-color: transparent;
+    text-decoration: none;
+    
+}
+.Editbtn{
+
+    font-family: "ZFRAMEFONT";
+    color: white ;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #ff9671 ;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    border-radius: 2px !important;
+
+}
+.Delbtn{
+
+    font-family: "ZFRAMEFONT";
+    color: white ;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #d53624 ;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    border-radius: 2px !important;
+
+}
+
+.Command2 {
+    /*border: 1px solid #FFB482;*/
+    font-family: "ZFRAMEFONT";
+    color: white ;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #2578b4 ;
+    cursor: pointer;
+    height:30px;
+    width: 42px;
+    border-radius: 2px !important;
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#0C5FA5),color-stop(0.03, #72C6E4));*/
+}
+.Command3 {
+    /*border: 1px solid #FFB482;*/
+    font-family: "ZFRAMEFONT";
+    color: white ;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #2578b4 ;
+    cursor: pointer;
+    height:30px;
+    width: 60px;
+    border-radius: 2px !important;
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#0C5FA5),color-stop(0.03, #72C6E4));*/
+}
+.btnYES {
+    font-family: "ZFRAMEFONT";
+    color: white ;
+    font-size: 12px !important;
+    background-color: #239b56;
+    width: 59px;
+    font-weight: normal !important;
+    text-align: center;
+}
+.btnNO{
+    
+    font-family: "ZFRAMEFONT";
+    color: white ;
+    font-size: 12px !important;
+    background-color: #e74c3c;
+    width: 59px;
+    font-weight: normal !important;
+    text-align: center;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons{
+    
+    float : left ;
+}
+.jconfirm-content
+{
+   float:right;
+   direction: rtl;
+   font-size: 12px;
+   font-family: "ZFRAMEFONT";    
+   text-align: right;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default{
+    
+    font-family: "ZFRAMEFONT";
+    color: white ;
+    font-size: 12px !important;
+    background-color: #e74c3c;
+    width: 50px;
+    font-weight: normal !important;
+    
+}
+
+
+
+
+
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+/*  position: relative;*/
+  display: inline-block;
+  
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+  
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 4000;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.autocomplete-items div {
+  padding:3px;
+  cursor: pointer;
+  
+  color: black;
+  border-bottom: 1px solid #7fbadd;
+  
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+
+
+input.ASD
+{
+    border: 1px solid #000099;
+}
+
+
+input.hasDatepicker
+{
+    height: calc(2.25rem + 2px);
+padding: .375rem 0.75rem .375rem .75rem;
+line-height: 1.5;
+color: #495057;
+height: 30px;
+vertical-align: middle;
+background-size: 8px 8px;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 250px !important;
+background: #fff url("../Images/Control/calander.png") no-repeat left .75rem center;
+font-size: 13px;
+}
+
+.bindfs
+{
+    
+border: none !important;
+padding-bottom: 0px !important;
+}
+
+.hidenbtn {
+    visibility: hidden;
+    display: none;
+    left: -500;
+    top: -500;
+}
+
+table.FormBinding  td {
+    border-style: none; 
+    vertical-align: bottom !important;
+    text-align: center !important;
+    padding-bottom: 0px !important;
+}
+.validation-summary{
+    background-color: #f7f1e3;
+    color: brown;
+    padding: 10px;
+    margin: 2px 5px 2px 5px;
+    font-size: 12px;
+    font-family: ZFRAMEFONT;
+}
+
+.InputTextRq {
+    border-right: solid 3px brown !important;
+}
+
+.jconfirm-box {
+    background-color: #CCC !important;
+}
+
+.jconfirm-title-c {
+    color: brown !important;
+    font-weight: bold !important;
+}
+
+.jconfirm-content-pane {
+    color: #333 !important;
+    font-weight: bold !important;
+}
+
+.jconfirm-closeIcon {
+    color: blue;
+}
+
+.MyFindBoxtable {
+    /*border: 1px solid #000000;*/
+    font-family: "ZFRAMEFONT";
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    background:  url("../Images/Control/findObjectpic.png") no-repeat left .25rem center !important;  
+    background-size: 18px 18px !important;
+     width: 30px;
+    height: 30px;
+    margin-right: 0px;
+}
+
+.MyLookUpStyle {    
+    width: 30% !important;      
+}
+
+.MyRefreshBtn{
+    font-family: "ZFRAMEFONT";
+    width: 30px;
+    height: 30px;
+    border: none !important;
+    background: url("../Images/Control/refresh-clear.png") no-repeat left .25rem center !important;   
+    margin-left: 10px;
+   
+}
+
+.MyRefreshDiv{
+    font-family: "ZFRAMEFONT";
+    width: 100%;
+    height: 30px;
+    text-align: left;
+
+}
+
+.MyResultGrid
+{
+    overflow-x: auto;
+    height: auto;
+    width:98%;
+    margin-right:1%;
+    margin-top:-38px;
+}
+
+Input.MyExcelBtn{
+    font-family: "ZFRAMEFONT";
+    direction: rtl !important;
+    width: 70px;
+    height: 30px;
+    background:#e7fbe6  url("../Images/Control/xls-icon.png") no-repeat left .25rem center !important;   
+    cursor: pointer;
+    border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+    padding-left: 24px;
+}
+
+Input.MyPrintBtn{
+    font-family: "ZFRAMEFONT";
+    width: 70px;
+    height: 30px;
+    border: none !important;
+    background: #e7fbe6 url("../Images/Control/printer-icon.png") no-repeat left .25rem center !important;   
+    cursor: pointer;
+     border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+    padding-left: 24px;
+}
+Input.MyPrintBtn:hover {
+    font-family: "ZFRAMEFONT";
+    width: 70px;
+    height: 30px;
+    border: none !important;
+    background: #81c7a2 url("../Images/Control/printer-icon.png") no-repeat left .25rem center !important;   
+    cursor: pointer;
+     border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+    padding-left: 24px;
+}
+Input.MyExcelBtn:hover {
+    font-family: "ZFRAMEFONT";
+    direction: rtl !important;
+    width: 70px;
+    height: 30px;
+    background:#81c7a2  url("../Images/Control/xls-icon.png") no-repeat left .25rem center !important;   
+    cursor: pointer;
+    border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+    padding-left: 24px;
+}
+
+#myDropdown input[type="button"]
+{
+    width:90% !important;
+    color:black !important;
+}
+
+.lblSuccess
+{
+ 
+font-family: "ZFRAMEFONT";
+color:green !important;
+font-size: 12px;
+background-color: transparent;
+font-weight: 400 !important; 
+text-decoration: none;
+
+    
+}
+
+.lblError
+{
+font-family: "ZFRAMEFONT";
+color:red !important;
+font-size: 12px;
+background-color: transparent;
+font-weight: 400 !important; 
+text-decoration: none;
+
+    
+}
+#lblLoding
+{
+    font-family: "ZFRAMEFONT";
+    color:green !important;
+    font-size: 12px;
+    background-color: transparent;
+    font-weight: 400 !important; 
+    text-decoration: none;
+    
+}
+
+
+
+
+
+#GridPanel2
+{
+    max-width:   100%;
+    max-height: 700px;
+    position:relative;
+    overflow: scroll;
+    direction: rtl;
+   
+   
+}
+
+#GridPanel2 div.FormGridDiv2 {
+        min-width: 100%;
+}
+
+#GridPanel2 div.FormGridDiv2 td {
+    border-left: none;
+}
+
+#GridPanel2 div.FormGridDiv2 th:nth-child(2),
+#GridPanel2 FormGridDiv2 td:nth-child(2) {
+    position: sticky;
+    left: 0;
+}
+
+
+#GridPanel2 div.FormGridDiv2 td:nth-child(2) {
+    background: #DDD;
+}
+
+
+#GridPanel2 div.FormGridDiv2 th:nth-child(2) {
+    z-index: 2;
+}
+
+#GridPanel2 div.FormGridDiv2 th {
+    border-left: none;
+    border-right: 1px solid #bbbbbb;
+    padding: 0px;
+    position: sticky;
+    top: 40;
+    background: #727272;
+    color: #e0e0e0;
+    font-weight: normal;
+   
+}
+
+#GridPanel2 div.FormGridDiv2 tr.pgr
+{
+    border-left: none;
+    border-right: 1px solid #bbbbbb;
+    padding: 5px;
+    position: sticky;
+    bottom: 0px;
+    background: #727272;
+    color: #e0e0e0;
+    font-weight: normal;
+}
+
+ /* Remove default bullets */
+  
+ .plus, .minus {
+    display: inline-block !important; 
+    background-repeat: no-repeat !important;
+    background-size: 16px 16px !important 
+    width: 16px !important;
+    height: 16px !important; 
+            /*vertical-align: middle !important;*/
+        }
+
+        .plus {
+            background-image: url(https://img.icons8.com/color/48/000000/plus.png) 
+        }
+
+        .minus {
+            background-image: url(https://img.icons8.com/color/48/000000/minus.png) 
+        }
+
+        ul {
+            list-style: none !important;
+            padding: 0px 0px 0px 20px !important;
+        }
+
+            ul.inner_ul li:before {
+                content: "├" !important;
+                font-size: 18px !important;
+                margin-left: -11px !important;
+                margin-top: -5px !important;
+                vertical-align: middle !important;
+                float: left !important;
+                width: 8px !important;
+                color: #41424e !important;
+            }
+
+            ul.inner_ul li:last-child:before {
+                content: "└" !important;
+            }
+
+        .inner_ul {
+            padding: 0px 0px 0px 35px !important;
+        }
+        
+        
+        
+   
+
+div.InLineGrid 
+{
+    max-width:   100%;
+    max-height: 400px;
+    position:relative;
+    overflow: scroll;
+    direction: rtl;
+}
+
+.zgrid
+{
+        scrollbar-color: #a19f9d transparent;
+        scrollbar-width: thin;
+        
+}
+div.InLineGrid div.zgrid {
+        width: max-content;
+        min-width: 100%;
+    
+}
+
+div.InLineGrid div.zgrid table {
+   
+}
+
+
+div.InLineGrid div.zgrid td {
+    border-left: none;
+    padding: 0px;
+    color:#000 !important;
+    text-align: center;
+}
+
+div.InLineGrid div.zgrid th:nth-child(1),
+div.InLineGrid FormGridDiv td:nth-child(1) {
+    position: sticky;
+    left: 0;
+ 
+}
+
+div.InLineGrid div.zgrid th:nth-child(2),
+div.InLineGrid div.zgrid td:nth-child(2) {
+    position: sticky;
+    left: 161px;
+}
+
+div.InLineGrid div.zgrid td:nth-child(1) {
+    background: #ffebb5;
+}
+
+
+
+
+div.InLineGrid div.zgrid th:nth-child(1),
+div.InLineGrid div.zgrid th:nth-child(2) {
+    z-index: 2;
+}
+
+
+
+
+div.InLineGrid div.zgrid th {
+    border-left: none;
+   
+    padding: 5px;
+    position: sticky;
+    top: 0;
+   
+    
+    font-weight: normal;
+}
+
+div.InLineGrid div.zgrid tr.pgr
+{
+    border-left: none;
+    border-right: 1px solid #bbbbbb;
+    padding: 5px;
+    position: sticky;
+    bottom: 0px;
+    background: #FFF;
+    color: #e0e0e0;
+    font-weight: normal;
+}
+
+
+
+
+.fieldsetmax {
+    width: 100%;
+    min-width: 0;
+}
+
+.zgrid  .Grid {
+/*    border: 2px solid #FFF;
+    background-color: #003b64 !important;
+    
+    width: 100%;
+    margin: 38px 0 0 0 ;
+    font-family: "ZFRAMEFONT";
+    color: #474747;    
+    font-size: x-small;*/
+      border: 2px solid #bfbfbf !important;
+
+   
+    width: 100%;
+    margin: 0px 0 0 0 !important;
+    font-family: "ZFRAMEFONT";
+    
+    font-size: x-small;
+}
+.seperator
+{
+    width: 100px;
+}
+.cell4
+{
+    width: calc(100vw - 180px);
+}
+
+.btn-primary-main
+{
+    height: 50px;
+}
+DataLable{
+    font-family: "ZFRAMEFONT";
+    background-color: #f9f9f9 !important;
+    color: #E5E5E5 !important;
+    position:absolute;
+    right:30px;
+    font-size: 10px;
+}
+
+
+
+Table.Lookup_Goods01
+{
+	/* Background-color: #3399CC;*/
+}
+
+input.InputText1447_1
+{
+	Width:100px;
+}
+input.InputText1447_2
+{
+	Width:200px;
+}
+input.InputText1447_3
+{
+	Width:50px;
+}
+
+input.InputText1447_4
+{
+    Width:80px;
+}
+
+
+input.InputText13686_3
+{
+    Width:50px;        
+ 
+}
+
+input.InputText13686_4
+{
+    Width:50px;        
+ 
+}
+
+
+Input.CmdSaveDoc1 {
+    /*border: 1px solid #24AA21;*/
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    background-color: #e7fbe6;
+    border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+    /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#006633),color-stop(0.03, #73be99));*/
+   
+     /*background:-webkit-gradient(linear,left top, left bottom,from(white),to(#006633),color-stop(0.03, #00cc66));
+     /*background: linear-gradient(to left, #095035 , #52937a);*/
+}
+Input.CmdCancelDoc1 {
+    /*border: 1px solid #24AA21;*/
+    font-family: "ZFRAMEFONT";
+    color: #383333;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    color: #fff;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    background-color: #ecabab;
+    color: #5b2525 !important;
+    border-radius: .25rem !important;
+    border: 1px solid #7d2222   !important;
+     /*background: linear-gradient(to left, #5b070d , #d77073);*/
+}
+
+Input.CmdCancelDoc1:hover {
+    border: none !important;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+/*    background:-webkit-gradient(linear,left top, left bottom,from(white),to(#c8313b),color-stop(0.03,#d04b36 ));*/
+background-color: #c47474;
+border: 1px solid #7d2222   !important;
+}
+
+Input.CmdSaveDoc1:hover {
+    border: 1px solid #24AA21;
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background:#81c7a2 ; 
+    border: 1px solid #0a5913   !important;
+    color: #0a5913 !important;
+    border-radius: .25rem;
+}
+Input.CmdSaveDoc1:disabled  {
+    border: 1px solid #000000;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #E00;
+}
+
+
+
+Input.CmdSaveDoc2 {
+    /*border: 1px solid #24AA21;*/
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    color: #0066ff !important;   
+    text-decoration: none;
+    direction: rtl;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    background-color: #CCC;
+    border: 1px solid #C0C0C0   !important;
+    border-radius: .25rem;
+
+}
+
+
+Input.CmdSaveDoc2:hover {
+
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    height:30px;
+    width: 100px;   
+    background:#99ff00 ; 
+    border: 1px solid #0E0   !important;
+    color: #0 !important;
+    border-radius: .25rem;
+    
+
+}
+Input.CmdSaveDoc2:disabled  {
+    border: 1px solid #000000;
+    font-family: "ZFRAMEFONT";
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    background-color: #E00;
+}
+
+
+Input.CmdCancelDoc2 {
+
+    font-family: "ZFRAMEFONT";
+    font-size: 12px;
+    color: #e9322d !important;   
+    text-decoration: none;
+    direction: rtl;
+    cursor: pointer;
+    height:30px;
+    width: 100px;
+    background-color: #CCC;
+    border: 1px solid #C0C0C0   !important;
+    border-radius: .25rem;
+}
+
+Input.CmdCancelDoc2:hover {
+
+    ont-family: "ZFRAMEFONT";
+    font-size: 12px;
+    text-decoration: none;
+    direction: rtl;
+    height:30px;
+    width: 100px;   
+    background:#FC6005 !important; 
+    border: 1px solid #F00   !important;
+    color: #FFFFFF !important;
+    border-radius: .25rem;
+    
+}
+
+#maindivecontainer
+{
+    margin-top: 10px;  /* An absolute length */
+    padding-top: 11px;
+}
+
+
+
+/* Change background color of buttons on hover */
+.cctab input:hover {
+    background-color: #6666ff  !important;
+    color: #FFF !important;
+}
+
+/* Create an active/current tablink class */
+.cctab input.active {
+background-color: #1A1EF7 !important;
+color: #FFF !important;
+}
+
+
+.cctab input {
+    background-color: #999999  !important;
+    color: #FFF !important;
+}
+
+.cctabcontent
+{
+    background-color: #fff !important;
+}
+
+
+
+input.textsearchgrid
+{
+    width:200px;
+    height:20px;
+    right : 70px;
+    position:absolute;
+    
+}
+input.searchgridok
+{
+    width:30px;
+    height:20px;
+    right :30px;
+    background-color:#000099;
+    color: #FFF !important;
+    position:absolute;
+}
+input.cmdClose
+{
+    width:100px;
+    height:20px;
+    right :130px;
+    background-color:#ff6600;
+    color: #000 !important;
+    position:absolute;
+}
+input.cmdisOneof
+{
+    width:100px;
+    height:20px;
+    right :130px;
+    background-color:#0000ff;
+    color: #fff !important;
+    position:absolute;
+}
+
+/*Grid Filter Menu */.itemsfiltermenu{
+          
+          margin:20px;
+          padding :0;
+          color: #000;
+          display:block;
+          list-style-type: none;
+          
+
+        }  
+        .itemsfiltermenuControler{
+          display:none;
+          position:fixed;
+          border:1px solid #B2B2B2;
+          width:450px;   
+          background:#ffffff;
+          box-shadow: 3px 3px 2px #E9E9E9;
+          border-radius:4px;
+          direction: ltr;
+          z-index: 10000;
+          opacity: 90%;
+        }
+
+        .itemsfiltermenu li{
+
+          padding:15px;
+          width: 400px;
+          cursor: pointer;
+          white-space: pre-line;
+          display:inline-block;
+          text-align: left;
+        }
+
+
+        .itemsfiltermenu li:hover{
+           color: white;
+          background:#284570;
+          border-radius:2px;
+        }
+
+
+        .cmdfilteroperation
+        {
+            width:40px;
+            height: 23px;
+            background-color:#ffffff !important;
+            color: #000;
+            
+            
+        }
+.cmdfilteroperationactive
+{
+            width:40px;
+            height: 23px;
+            background-color:#ffcc33 !important;
+}
+
+
+.lblchangeingrid
+{
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+    width: 100%;    
+    color: #000;
+    background-color:#ffffcc; 
+    display:inline-block;
+}
+
+span.topmenulabel
+{
+    color:#000;
+    text-align: left;
+    width: 100%;
+    
+}

@@ -1,0 +1,62 @@
+﻿/**
+*
+*	Name:			IRAN Font
+*	Version:		4.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 25, 2012
+*	Updated on:		Dec 12, 2015
+*	Website:		http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+خانواده فونت ایران یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRAN Family typeface fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*	
+**/
+
+
+@font-face {
+	font-family: ZFRAMEFONT;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/persina-font/eot/IRANBold.eot');
+	src: url('../fonts/persina-font/eot/IRANBold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/persina-font/woff2/IRANBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/persina-font/woff/IRANBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/persina-font/ttf/IRANBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: ZFRAMEFONT;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/persina-font/eot/IRANBlack.eot');
+	src: url('../fonts/persina-font/eot/IRANBlack.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/persina-font/woff2/IRANBlack.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/persina-font/woff/IRANBlack.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/persina-font/ttf/IRANBlack.ttf') format('truetype');
+}
+@font-face {
+	font-family: ZFRAMEFONT;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/persina-font/eot/IRAN_SemiBold.eot');
+	src: url('../fonts/persina-font/eot/IRAN_SemiBold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/persina-font/woff2/IRAN_SemiBold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/persina-font/woff/IRAN_SemiBold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/persina-font/ttf/IRAN_SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: ZFRAMEFONT;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/persina-font/eot/IRAN.eot');
+	src: url('../fonts/persina-font/eot/IRAN.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/persina-font/woff2/IRAN.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/persina-font/woff/IRAN.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/persina-font/ttf/IRAN.ttf') format('truetype');
+}

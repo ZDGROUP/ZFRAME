@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<StiSerializer application="StiReport" type="Java" version="1.2">
+  <CalculationMode>Interpretation</CalculationMode>
+  <Dictionary Ref="1" isKey="true" type="Dictionary">
+    <BusinessObjects count="0" isList="true"/>
+    <Databases count="2" isList="true">
+      <EJ Ref="2" isKey="true" type="Stimulsoft.Report.Dictionary.StiOracleDatabase">
+        <Alias>EJ</Alias>
+        <ConnectionStringEncrypted>xbLV6F84MYX7KGmh5QS1I7DWT2j/AgmIRkzZxE4AK06N0P3LxjhhoGsaaZzlPeoSwmzNA01Z8qBqGfnxZ3SjdsBW9wlnTFGMwg==</ConnectionStringEncrypted>
+        <Name>EJ</Name>
+        <Password>MA@@1279</Password>
+        <User>EJ</User>
+      </EJ>
+      <EJ2 Ref="3" isKey="true" type="Stimulsoft.Report.Dictionary.StiOracleDatabase">
+        <Alias>EJ2</Alias>
+        <ConnectionStringEncrypted>xbLV6F84MYX7KGmh5QS1I7DWT2j/AgmIRkzZxE4AK06N0P3LxjhhoGsaaZzlPeoSwmzNA01Z8qBqGfnxZ3SjdsBW9wlnTFGMwg==</ConnectionStringEncrypted>
+        <Name>EJ2</Name>
+        <Password>MA@@1279</Password>
+        <User>EJ</User>
+      </EJ2>
+    </Databases>
+    <DataSources count="2" isList="true">
+      <CLEARING_F1 Ref="4" isKey="true" type="Stimulsoft.Report.Dictionary.StiOracleSource">
+        <Alias>CLEARING_F1</Alias>
+        <Columns count="12" isList="true">
+          <value>ATM_CLEAR_ID,System.Double</value>
+          <value>ATM_ID,System.Double</value>
+          <value>CARD_CAPTURE,System.Double</value>
+          <value>CAS1DIS,System.Double</value>
+          <value>CAS2DIS,System.Double</value>
+          <value>CAS3DIS,System.Double</value>
+          <value>CAS4DIS,System.Double</value>
+          <value>END_DATE,System.String</value>
+          <value>END_TIME,System.String</value>
+          <value>FILE_ID,System.Double</value>
+          <value>START_DATE,System.String</value>
+          <value>START_TIME,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <DataName>EJ</DataName>
+        <Dictionary isRef="1"/>
+        <Name>CLEARING_F1</Name>
+        <NameInSource>EJ</NameInSource>
+        <Parameters count="0" isList="true"/>
+        <SqlCommand>SELECT * FROM ATM_CLEARING </SqlCommand>
+        <Type>Table</Type>
+      </CLEARING_F1>
+      <CLEARING_F2 Ref="5" isKey="true" type="Stimulsoft.Report.Dictionary.StiOracleSource">
+        <Alias>CLEARING_F2</Alias>
+        <Columns count="12" isList="true">
+          <value>ATM_CLEAR_ID,System.Double</value>
+          <value>ATM_ID,System.Double</value>
+          <value>CARD_CAPTURE,System.Double</value>
+          <value>CAS1DIS,System.Double</value>
+          <value>CAS2DIS,System.Double</value>
+          <value>CAS3DIS,System.Double</value>
+          <value>CAS4DIS,System.Double</value>
+          <value>END_DATE,System.String</value>
+          <value>END_TIME,System.String</value>
+          <value>FILE_ID,System.Double</value>
+          <value>START_DATE,System.String</value>
+          <value>START_TIME,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <DataName>EJ2</DataName>
+        <Dictionary isRef="1"/>
+        <Name>CLEARING_F2</Name>
+        <NameInSource>EJ2</NameInSource>
+        <Parameters count="0" isList="true"/>
+        <SqlCommand>SELECT * FROM ATM_CLEARING</SqlCommand>
+        <Type>Table</Type>
+      </CLEARING_F2>
+    </DataSources>
+    <Relations count="0" isList="true"/>
+    <Report isRef="0"/>
+    <Resources count="0" isList="true"/>
+    <Variables count="2" isList="true">
+      <value>,ATM_ID,ATM_ID,,System.Int64,_x0030_,False,False,True,False,_x003c__x003f_xml_x0020_version_x003d__x0022_1_x002e_0_x0022__x0020_encoding_x003d__x0022_UTF_x002d_8_x0022__x0020_standalone_x003d__x0022_no_x0022__x003f__x003e__x003c_StiSerializer_x0020_application_x003d__x0022_State_x0022__x0020_type_x003d__x0022_Java_x0022__x0020_version_x003d__x0022_1_x002e_2_x0022__x003e__x003c_BindingValue_x003e_False_x003c__x002f_BindingValue_x003e__x003c_BindingValuesColumn_x002f__x003e__x003c_DateTimeType_x003e_DateAndTime_x003c__x002f_DateTimeType_x003e__x003c_Keys_x0020_count_x003d__x0022_0_x0022__x0020_isList_x003d__x0022_true_x0022__x002f__x003e__x003c_Values_x0020_count_x003d__x0022_0_x0022__x0020_isList_x003d__x0022_true_x0022__x002f__x003e__x003c_ValuesBinding_x0020_count_x003d__x0022_0_x0022__x0020_isList_x003d__x0022_true_x0022__x002f__x003e__x003c__x002f_StiSerializer_x003e_,,True,FromVariable</value>
+      <value>,DATE,DATE,,System.String,,False,False,True,False,_x003c__x003f_xml_x0020_version_x003d__x0022_1_x002e_0_x0022__x0020_encoding_x003d__x0022_UTF_x002d_8_x0022__x0020_standalone_x003d__x0022_no_x0022__x003f__x003e__x003c_StiSerializer_x0020_application_x003d__x0022_State_x0022__x0020_type_x003d__x0022_Java_x0022__x0020_version_x003d__x0022_1_x002e_2_x0022__x003e__x003c_BindingValue_x003e_False_x003c__x002f_BindingValue_x003e__x003c_BindingValuesColumn_x002f__x003e__x003c_DateTimeType_x003e_DateAndTime_x003c__x002f_DateTimeType_x003e__x003c_Keys_x0020_count_x003d__x0022_0_x0022__x0020_isList_x003d__x0022_true_x0022__x002f__x003e__x003c_Values_x0020_count_x003d__x0022_0_x0022__x0020_isList_x003d__x0022_true_x0022__x002f__x003e__x003c_ValuesBinding_x0020_count_x003d__x0022_0_x0022__x0020_isList_x003d__x0022_true_x0022__x002f__x003e__x003c__x002f_StiSerializer_x003e_,,True,FromVariable</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings count="0" isList="true"/>
+  <IsSubmit>False</IsSubmit>
+  <JsonReport>False</JsonReport>
+  <MetaTags count="0" isList="true"/>
+  <Pages count="1" isList="true">
+    <Page1 Ref="6" isKey="true" type="Page">
+      <Border>None;Black;2.0;Solid;False;4.0;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components count="8" isList="true">
+        <Text10 Ref="7" isKey="true" type="Text">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.4,4.8,12.2,1.2</ClientRectangle>
+          <Conditions count="0" isList="true"/>
+          <Font>B Zar,16,Bold</Font>
+          <Guid>77bb8b8b545248d29f2623147ab00622</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text10</Name>
+          <Page isRef="6"/>
+          <Parent isRef="6"/>
+          <Text>تعداد برگ و اسکناس های بارگزاری شده در ابتدای روز </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text10>
+        <Text11 Ref="8" isKey="true" type="Text">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.8,10.2,12.2,1.2</ClientRectangle>
+          <Conditions count="0" isList="true"/>
+          <Font>B Zar,16,Bold</Font>
+          <Guid>1d786bf0a148462fad210409e559065f</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text11</Name>
+          <Page isRef="6"/>
+          <Parent isRef="6"/>
+          <Text>تعداد برگ و اسکناس های بارگزاری شده در انتهای روز </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text11>
+        <Text12 Ref="9" isKey="true" type="Text">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.4,4.8,3,1.2</ClientRectangle>
+          <Conditions count="0" isList="true"/>
+          <Font>B Zar,16,Bold</Font>
+          <Guid>a9497534ab5a4bd0971bfe10dc313da0</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text12</Name>
+          <Page isRef="6"/>
+          <Parent isRef="6"/>
+          <Text>تاریخ</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text12>
+        <Text13 Ref="10" isKey="true" type="Text">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,10.2,3,1.2</ClientRectangle>
+          <Conditions count="0" isList="true"/>
+          <Font>B Zar,16,Bold</Font>
+          <Guid>390f70aae52d4f709778285da954899e</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text13</Name>
+          <Page isRef="6"/>
+          <Parent isRef="6"/>
+          <Text>تاریخ</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text13>
+        <Text14 Ref="11" isKey="true" type="Text">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.2,4.8,3,1.2</ClientRectangle>
+          <Conditions count="0" isList="true"/>
+          <Font>B Zar,16,Bold</Font>
+          <Guid>4d6b22a919df49698c9dff9cbd6728e2</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text14</Name>
+          <Page isRef="6"/>
+          <Parent isRef="6"/>
+          <Text>زمان</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text14>
+        <Text15 Ref="12" isKey="true" type="Text">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0.4,10.2,3,1.2</ClientRectangle>
+          <Conditions count="0" isList="true"/>
+          <Font>B Zar,16,Bold</Font>
+          <Guid>c265f80f106247f1a1aee18616134f40</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text15</Name>
+          <Page isRef="6"/>
+          <Parent isRef="6"/>
+          <Text>زمان</Text>
+          <TextBrush>Black</TextBrush>
+        </Text15>
+        <Text16 Ref="13" isKey="true" type="Text">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>6.8,11.8,12.2,1.2</ClientRectangle>
+          <Conditions count="0" isList="true"/>
+          <Font>B Zar,16,Bold</Font>
+          <Guid>1bcbbad2b5154a4e9bfb2717e12782a4</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text16</Name>
+          <Page isRef="6"/>
+          <Parent isRef="6"/>
+          <Text>گزارش تراکنش ها </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text16>
+        <ReportTitleBand1 Ref="14" isKey="true" type="ReportTitleBand">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19.01,4.2</ClientRectangle>
+          <Components count="9" isList="true">
+            <Text1 Ref="15" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0,5,1</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,18,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>بانک تجارت </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text2 Ref="16" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8.8,1,10.2,1.2</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,16,Bold</Font>
+              <Guid>3a5c67b292664a58b8ba949613250d01</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>خلاصه ژورنال الکترونیکی خودپرداز با شماره</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="17" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,1,5.4,1.2</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,16,Bold</Font>
+              <Guid>f2602d8a56404cae87cf658b978201e6</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>01</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="18" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,2.8,2.2,1.2</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,16,Bold</Font>
+              <Guid>e824f927202a4553b8f66dae152633ed</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>شعبه </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="19" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.6,2.6,2.2,1.2</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,16,Bold</Font>
+              <Guid>dc3306561812436a8a094432c11f8a10</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>کد شعبه</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text5>
+            <Text6 Ref="20" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,2.6,2.2,1.2</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,16,Bold</Font>
+              <Guid>a85061b30d3b4b3bba0705b2c7f3331f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="21" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,2.8,2.2,1.2</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,16,Bold</Font>
+              <Guid>b2e0d55c2aad4853973871392078abf9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>شعبه </Text>
+              <TextBrush>Black</TextBrush>
+            </Text7>
+            <Text8 Ref="22" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,2.6,2.2,1.2</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,16,Bold</Font>
+              <Guid>adf573c7ab5b43b69668bda9c6dd85b9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>کد شعبه</Text>
+              <TextBrush>Black</TextBrush>
+            </Text8>
+            <Text9 Ref="23" isKey="true" type="Text">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.6,2.6,2.2,1.2</ClientRectangle>
+              <Conditions count="0" isList="true"/>
+              <Font>B Zar,16,Bold</Font>
+              <Guid>0eef001ec75a4ed4a44ce41b5451b57f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="6"/>
+              <Parent isRef="14"/>
+              <Text>تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+            </Text9>
+          </Components>
+          <Conditions count="0" isList="true"/>
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="6"/>
+          <Parent isRef="6"/>
+        </ReportTitleBand1>
+      </Components>
+      <Conditions count="0" isList="true"/>
+      <Guid>bc104d68994d421983ac7c3ef7643552</Guid>
+      <Margins>1,1,1,1</Margins>
+      <MirrorMargins>False</MirrorMargins>
+      <Name>Page1</Name>
+      <Page isRef="6"/>
+      <PageHeight>29.69</PageHeight>
+      <PageWidth>21.01</PageWidth>
+      <Report isRef="0"/>
+      <Watermark Ref="24" isKey="true" type="Stimulsoft.Report.Components.StiWatermark">
+        <EnabledExpression/>
+        <Font>Arial,100</Font>
+        <ImageHyperlink/>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="25" isKey="true" type="Stimulsoft.Report.Print.StiPrinterSettings"/>
+  <ReferencedAssemblies count="8" isList="true">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <RefreshTime>0</RefreshTime>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>01/16/2024 04:54:50 PM</ReportChanged>
+  <ReportCreated>01/16/2024 04:37:50 PM</ReportCreated>
+  <ReportFile>Report.mrt</ReportFile>
+  <ReportGuid>385ad2a7df574a0fa7639e962fc9d3f1</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportResources count="0" isList="true"/>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2019.3.7 from 04 October 2019, Java</ReportVersion>
+  <RetrieveOnlyUsedData>False</RetrieveOnlyUsedData>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        
+        public Report()
+        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles count="0" isList="true"/>
+</StiSerializer>

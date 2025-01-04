@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <VendorPortal Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>VendorPortal</Alias>
+        <ConnectionStringEncrypted>9FzBSEZK0/XpR6GEY2ytJ9F4ywJITKsJRlvtyWFsJQ/VVPXrXniTpO1hnIBOhKR/1BpTr0VdqwVFCD29Y+wsu8cg96tIW3v1RVq91OpMYjvEcPeDzEFD+WkI7fFhXCIqxMT1KcVC</ConnectionStringEncrypted>
+        <Key>ccb01d7c154c42b6bfe443105ba8d13b</Key>
+        <Name>VendorPortal</Name>
+      </VendorPortal>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <Price_Proposal Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>Price_Proposal</Alias>
+        <Columns isList="true" count="19">
+          <value>ORIGINAL,Price_Proposal_ID,Price_Proposal_ID,Price_Proposal_ID,System.Int64,b07dd31700454200bd712d8fea2453b0</value>
+          <value>ORIGINAL,Price_Proposal_No,Price_Proposal_No,Price_Proposal_No,System.String,dfed73a4d3b341e0b940193fec77dc73</value>
+          <value>ORIGINAL,Price_Proposal_Title,Price_Proposal_Title,Price_Proposal_Title,System.String,_x0033_a4ed7cb6a8848229d7e7d42f41fbc5f</value>
+          <value>ORIGINAL,Price_Proposal_Desc,Price_Proposal_Desc,Price_Proposal_Desc,System.String,de6ef60339734e92bf0951b0ff492266</value>
+          <value>ORIGINAL,Vendor_ID,Vendor_ID,Vendor_ID,System.Int64,_x0032_d71b82c22504b61931a5120afe55743</value>
+          <value>ORIGINAL,Location_ID,Location_ID,Location_ID,System.Int64,_x0036_72b732850854795919ce4324af8bfa4</value>
+          <value>ORIGINAL,From_Date,From_Date,From_Date,System.String,_x0033_26da9f6bd0942e79aa0f6c270b81538</value>
+          <value>ORIGINAL,To_Date,To_Date,To_Date,System.String,_x0034_8c8b4ff06034dae82adb11bb5290626</value>
+          <value>ORIGINAL,FROM_TIME,FROM_TIME,FROM_TIME,System.String,_x0035_2f8262fa7f946f795f2eb0e40c5a71d</value>
+          <value>ORIGINAL,TO_TIME,TO_TIME,TO_TIME,System.String,dae8051bd039473bab3873ac0eb7c1a2</value>
+          <value>ORIGINAL,User_ID,User_ID,User_ID,System.String,_x0035_c4d7fc600cf4f3796f39e364d082f4c</value>
+          <value>ORIGINAL,Create_Date,Create_Date,Create_Date,System.String,_x0036_a24d49685f3429fa3b1f8f0887150da</value>
+          <value>ORIGINAL,Create_Time,Create_Time,Create_Time,System.String,_x0034_83ba176289d49e691e0ff160bbc457d</value>
+          <value>ORIGINAL,LT_Price_Proposal_Status_ID,LT_Price_Proposal_Status_ID,LT_Price_Proposal_Status_ID,System.Int64,_x0039_249292943a04c6bad8c3f96b9c5183a</value>
+          <value>ORIGINAL,IS_Active,IS_Active,IS_Active,System.Boolean,_x0033_bdfd4c4f875404a917bf27b79d18eb7</value>
+          <value>ORIGINAL,Main_Sys_Doc_ID,Main_Sys_Doc_ID,Main_Sys_Doc_ID,System.String,_x0036_019b48185cf4d10a201d1dbb2f442c1</value>
+          <value>ORIGINAL,Price_Proposal_Scope_ID,Price_Proposal_Scope_ID,Price_Proposal_Scope_ID,System.Int32,e3d4195f4f124cd4aaff2319d4670cbf</value>
+          <value>ORIGINAL,CURRENCY_ID,CURRENCY_ID,CURRENCY_ID,System.Int64,effe7c18682e423d8901c1ebbe8ae565</value>
+          <value>ORIGINAL,IS_PROMOTION,IS_PROMOTION,IS_PROMOTION,System.Boolean,_x0030_bba150d83654ea489fc8b1e7aa00b9b</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>00eeba96f5ef452b823937ab0f7b99bb</Key>
+        <Name>Price_Proposal</Name>
+        <NameInSource>VendorPortal</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from Price_Proposal where PRICE_PROPOSAL_ID = @PRICE_PROPOSAL_ID </SqlCommand>
+      </Price_Proposal>
+      <PRICE_PROPOSAL_LINE Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>PRICE_PROPOSAL_LINE</Alias>
+        <Columns isList="true" count="32">
+          <value>ORIGINAL,PRICE_PROPOSAL_LINE_ID,PRICE_PROPOSAL_LINE_ID,PRICE_PROPOSAL_LINE_ID,System.Int64,_x0039_d014b16e4444a55b1d866a5cf1ecfcc</value>
+          <value>ORIGINAL,PRICE_PROPOSAL_ID,PRICE_PROPOSAL_ID,PRICE_PROPOSAL_ID,System.Int64,a061a3bec811438d88a555e7624824ba</value>
+          <value>ORIGINAL,PRODUCT_ID,PRODUCT_ID,PRODUCT_ID,System.Int64,d706a25135ec4d81a31c1a7a21b6f5bd</value>
+          <value>ORIGINAL,LOCATION_ID,LOCATION_ID,LOCATION_ID,System.Int64,_x0031_93ae1c3406a44598e44a6451e1f0288</value>
+          <value>ORIGINAL,UNIT_ID,UNIT_ID,UNIT_ID,System.Int64,fc1d780f1159491fa2dff236a8ae1a37</value>
+          <value>ORIGINAL,AMOUNT,AMOUNT,AMOUNT,System.String,_x0033_31c3f62374c426d95abeed37b63fa83</value>
+          <value>ORIGINAL,PURCH_PRICE,PURCH_PRICE,PURCH_PRICE,System.String,b66a12f9b0dd491db045c3622bd8e2c4</value>
+          <value>ORIGINAL,NET_PURCH_PRICE,NET_PURCH_PRICE,NET_PURCH_PRICE,System.String,de70e5a9fa3f4ec0a0010495fd218819</value>
+          <value>ORIGINAL,SALE_PRICE,SALE_PRICE,SALE_PRICE,System.String,aa024c45c7a14499bd3ae2d9c59ed5f2</value>
+          <value>ORIGINAL,NET_SALE_PRICE,NET_SALE_PRICE,NET_SALE_PRICE,System.String,_x0038_d0f790c228349168837a8a4b97e5d02</value>
+          <value>ORIGINAL,PRD_PRICE,PRD_PRICE,PRD_PRICE,System.String,_x0031_fef2ffd922440248e2bddcfdc348211</value>
+          <value>ORIGINAL,VAT_AMOUNT,VAT_AMOUNT,VAT_AMOUNT,System.String,_x0038_62092f233f0495b9ddd5d0ca48ed077</value>
+          <value>ORIGINAL,RETAILER_SHARE_PERCENT,RETAILER_SHARE_PERCENT,RETAILER_SHARE_PERCENT,System.String,_x0030_e1fd7b382074bed87535c47bf28523b</value>
+          <value>ORIGINAL,DISTRBUTOR_SHARE_PERCENT,DISTRBUTOR_SHARE_PERCENT,DISTRBUTOR_SHARE_PERCENT,System.String,bcf3f97ceb694e5b8fb6367e9a3177cc</value>
+          <value>ORIGINAL,MARGINE,MARGINE,MARGINE,System.String,_x0034_0ef6677d36b4da2b3b9c315df3ff186</value>
+          <value>ORIGINAL,CURRENCY_ID,CURRENCY_ID,CURRENCY_ID,System.Int64,ee4409ef99e6497598024b04156e843c</value>
+          <value>ORIGINAL,DISCOUNT_PERCENTAGE_1,DISCOUNT_PERCENTAGE_1,DISCOUNT_PERCENTAGE_1,System.String,d6f83f01f3af47809e32e260ccca2564</value>
+          <value>ORIGINAL,DISCOUNT_PERCENTAGE_2,DISCOUNT_PERCENTAGE_2,DISCOUNT_PERCENTAGE_2,System.String,_x0034_1f9daf583dd4cdba76789275d737a80</value>
+          <value>ORIGINAL,OTHER_DISCOUNT_1,OTHER_DISCOUNT_1,OTHER_DISCOUNT_1,System.String,_x0036_c0827c2c4c842fc90cefac2f9da9abf</value>
+          <value>ORIGINAL,OTHER_DISCOUNT_2,OTHER_DISCOUNT_2,OTHER_DISCOUNT_2,System.String,_x0030_788efa2f8b141ee80a88b69ff25a281</value>
+          <value>ORIGINAL,OTHER_DISCOUNT_3,OTHER_DISCOUNT_3,OTHER_DISCOUNT_3,System.String,e2072fc1feb942aeab56d9e0f61a3dd0</value>
+          <value>ORIGINAL,OTHER_DISCOUNT_4,OTHER_DISCOUNT_4,OTHER_DISCOUNT_4,System.String,_x0030_137ccc7c4a442598cd2af7b242ab9fc</value>
+          <value>ORIGINAL,MAIN_SYS_SALE_ID,MAIN_SYS_SALE_ID,MAIN_SYS_SALE_ID,System.Int64,_x0039_a81825969184ed4a11e7414b82b0b6a</value>
+          <value>ORIGINAL,MAIN_SYS_PURCH_ID,MAIN_SYS_PURCH_ID,MAIN_SYS_PURCH_ID,System.Int64,_x0033_5535ee6efd14a84bf7fa78c3a83b2e7</value>
+          <value>ORIGINAL,MAIN_SYS_DSCS_ID,MAIN_SYS_DSCS_ID,MAIN_SYS_DSCS_ID,System.Int64,fb6813f7999a453795b8c98d4684b411</value>
+          <value>ORIGINAL,MAIN_SYS_DSCP_ID,MAIN_SYS_DSCP_ID,MAIN_SYS_DSCP_ID,System.Int64,_x0034_8c9e1bbd54d4648af9aab2981997965</value>
+          <value>ORIGINAL,LINE_STATUSID,LINE_STATUSID,LINE_STATUSID,System.Int32,a70b337e55a24a05b0deee5ea4ee50dc</value>
+          <value>ORIGINAL,PRODUCT_BARCODEID,PRODUCT_BARCODEID,PRODUCT_BARCODEID,System.Int64,_x0036_d8d43cf07224428805b290edc862be7</value>
+          <value>ORIGINAL,MAIN_SYS_ID,MAIN_SYS_ID,MAIN_SYS_ID,System.String,_x0037_09d76393e894c999d1fc74df34f4853</value>
+          <value>ORIGINAL,LT_PPL_STATUS_ID,LT_PPL_STATUS_ID,LT_PPL_STATUS_ID,System.Int32,e620ba9e350c466181dd56e72dca54d2</value>
+          <value>ORIGINAL,DUES_PERCENT,DUES_PERCENT,DUES_PERCENT,System.String,_x0031_866d409ed004ff68a07b7378e8a93c1</value>
+          <value>ORIGINAL,IS_PROMOTION,IS_PROMOTION,IS_PROMOTION,System.Boolean,_x0035_4aef8480a864f62ae0a3b85cee96c76</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>4d81e1b528ef418d8576c04b4fae471d</Key>
+        <Name>PRICE_PROPOSAL_LINE</Name>
+        <NameInSource>VendorPortal</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from PRICE_PROPOSAL_LINE where PRICE_PROPOSAL_ID = @PRICE_PROPOSAL_ID </SqlCommand>
+      </PRICE_PROPOSAL_LINE>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="1">
+      <value>,PRICE_PROPOSAL_ID,PRICE_PROPOSAL_ID,,System.Int64,,False,False,True,False,_x003C__x003F_xml_x0020_version_x003D__x0022_1.0_x0022__x0020_encoding_x003D__x0022_utf-16_x0022__x0020_standalone_x003D__x0022_yes_x0022__x003F__x003E__x003C_StiSerializer_x0020_version_x003D__x0022_1.02_x0022__x0020_type_x003D__x0022_Net_x0022__x0020_application_x003D__x0022_State_x0022__x003E__x003C_SortDirection_x003E_None_x003C__x002F_SortDirection_x003E__x003C_BindingVariable_x0020_isNull_x003D__x0022_true_x0022__x0020__x002F__x003E__x003C__x002F_StiSerializer_x003E_,_x0031_c0d5ab7c9884ed3ad4686c1bf6724ed,True</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>be06247681b94263a852b6c8d58f75de</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,1.2</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0.2,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{Price_Proposal.Price_Proposal_No}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text1>
+            <Text2 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0.5,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{Price_Proposal.From_Date}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+            <Text3 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,0.2,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{Price_Proposal.To_Date}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text3>
+            <Text4 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.2,0.6,0.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{Price_Proposal.Create_Date}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="11" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,8.92,7.72,1.3</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageFooterBand1>
+        <TablePRICE_PROPOSAL_LINE Ref="12" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,1.8,7.72,0.9</ClientRectangle>
+          <ColumnCount>9</ColumnCount>
+          <Components isList="true" count="27">
+            <TablePRICE_PROPOSAL_LINE_Cell1 Ref="13" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>0</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell1</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>PRODUCT_ID</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell1>
+            <TablePRICE_PROPOSAL_LINE_Cell2 Ref="14" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0.9,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>1</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell2</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>LOCATION_ID</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell2>
+            <TablePRICE_PROPOSAL_LINE_Cell3 Ref="15" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>1.8,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>2</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell3</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>UNIT_ID</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell3>
+            <TablePRICE_PROPOSAL_LINE_Cell4 Ref="16" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>2.7,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>3</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell4</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>AMOUNT</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell4>
+            <TablePRICE_PROPOSAL_LINE_Cell5 Ref="17" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>3.6,0,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>4</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell5</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>NET_PURCH_PRICE</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell5>
+            <TablePRICE_PROPOSAL_LINE_Cell6 Ref="18" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>4.5,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>5</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell6</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>PURCH_PRICE</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell6>
+            <TablePRICE_PROPOSAL_LINE_Cell7 Ref="19" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>5.3,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>6</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell7</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>MARGINE</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell7>
+            <TablePRICE_PROPOSAL_LINE_Cell8 Ref="20" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>6.1,0,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>7</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell8</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>DISCOUNT_PERCENTAGE_2</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell8>
+            <TablePRICE_PROPOSAL_LINE_Cell9 Ref="21" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>6.9,0,0.82,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>8</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell9</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>OTHER_DISCOUNT_1</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell9>
+            <TablePRICE_PROPOSAL_LINE_Cell10 Ref="22" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,0.3,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>9</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell10</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.PRODUCT_ID}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell10>
+            <TablePRICE_PROPOSAL_LINE_Cell11 Ref="23" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0.9,0.3,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>10</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell11</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.LOCATION_ID}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell11>
+            <TablePRICE_PROPOSAL_LINE_Cell12 Ref="24" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>1.8,0.3,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>11</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell12</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.UNIT_ID}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell12>
+            <TablePRICE_PROPOSAL_LINE_Cell13 Ref="25" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>2.7,0.3,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>12</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell13</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.AMOUNT}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell13>
+            <TablePRICE_PROPOSAL_LINE_Cell14 Ref="26" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>3.6,0.3,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>13</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell14</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.NET_PURCH_PRICE}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell14>
+            <TablePRICE_PROPOSAL_LINE_Cell15 Ref="27" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>4.5,0.3,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>14</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell15</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.PURCH_PRICE}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell15>
+            <TablePRICE_PROPOSAL_LINE_Cell16 Ref="28" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>5.3,0.3,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>15</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell16</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.MARGINE}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell16>
+            <TablePRICE_PROPOSAL_LINE_Cell17 Ref="29" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>6.1,0.3,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>16</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell17</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.DISCOUNT_PERCENTAGE_2}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell17>
+            <TablePRICE_PROPOSAL_LINE_Cell18 Ref="30" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>6.9,0.3,0.82,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>17</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell18</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{PRICE_PROPOSAL_LINE.OTHER_DISCOUNT_1}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </TablePRICE_PROPOSAL_LINE_Cell18>
+            <TablePRICE_PROPOSAL_LINE_Cell19 Ref="31" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,0.6,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>18</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell19</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell19>
+            <TablePRICE_PROPOSAL_LINE_Cell20 Ref="32" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0.9,0.6,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>19</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell20</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell20>
+            <TablePRICE_PROPOSAL_LINE_Cell21 Ref="33" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>1.8,0.6,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>20</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell21</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell21>
+            <TablePRICE_PROPOSAL_LINE_Cell22 Ref="34" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>2.7,0.6,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>21</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell22</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell22>
+            <TablePRICE_PROPOSAL_LINE_Cell23 Ref="35" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>3.6,0.6,0.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>22</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell23</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell23>
+            <TablePRICE_PROPOSAL_LINE_Cell24 Ref="36" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>4.5,0.6,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>23</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell24</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell24>
+            <TablePRICE_PROPOSAL_LINE_Cell25 Ref="37" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>5.3,0.6,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>24</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell25</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell25>
+            <TablePRICE_PROPOSAL_LINE_Cell26 Ref="38" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>6.1,0.6,0.8,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>25</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell26</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell26>
+            <TablePRICE_PROPOSAL_LINE_Cell27 Ref="39" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>6.9,0.6,0.82,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>26</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TablePRICE_PROPOSAL_LINE_Cell27</Name>
+              <Page isRef="5" />
+              <Parent isRef="12" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <TextBrush>Black</TextBrush>
+            </TablePRICE_PROPOSAL_LINE_Cell27>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>PRICE_PROPOSAL_LINE</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <FooterRowsCount>1</FooterRowsCount>
+          <HeaderRowsCount>1</HeaderRowsCount>
+          <MinHeight>0.30000000000000004</MinHeight>
+          <Name>TablePRICE_PROPOSAL_LINE</Name>
+          <NumberID>27</NumberID>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <RowCount>3</RowCount>
+          <Sort isList="true" count="0" />
+        </TablePRICE_PROPOSAL_LINE>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>eb64e05d7bac4c1b8dadac144ccd057f</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>2/7/2023 1:39:10 PM</ReportChanged>
+  <ReportCreated>2/7/2023 1:24:58 PM</ReportCreated>
+  <ReportFile>C:\Report\PPORPT.mrt</ReportFile>
+  <ReportGuid>1c250ef761f643e18bed1dcbf3251d09</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2023.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

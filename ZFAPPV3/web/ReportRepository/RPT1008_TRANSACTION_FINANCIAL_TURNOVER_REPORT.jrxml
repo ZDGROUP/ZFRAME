@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RPT1008_TRANSACTION_FINANCIAL_TURNOVER_REPORT" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3e5dd771-d4ae-4c13-b260-2db7bc39cdc7">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ACC"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#C3CFD9">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#C3CFD9">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TH" mode="Opaque" backcolor="#C3CFD9">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_CH" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="TableDataset" uuid="f2d6be75-f901-44a3-b3db-bfec8e7df785">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ACC"/>
+		<parameter name="IACCOUNTCODE" class="java.lang.String"/>
+		<parameter name="IMODULEID" class="java.lang.String"/>
+		<parameter name="IFROMDATE" class="java.lang.String"/>
+		<parameter name="IENDDATE" class="java.lang.String"/>
+		<queryString language="plsql">
+			<![CDATA[{call ACC.PROCEDURE_REPORT_TRANSACTION_FINANCIAL_TURNOVER($P{ORACLE_REF_CURSOR}, $P{IACCOUNTCODE}, $P{IMODULEID},
+$P{IFROMDATE}, $P{IENDDATE})}]]>
+		</queryString>
+		<field name="TRANSACTION_NUMBER" class="java.lang.String"/>
+		<field name="ROW_NATURE" class="java.lang.String"/>
+		<field name="CUSTOMER_NUMBER" class="java.lang.String"/>
+		<field name="PERSONNEL_CODE" class="java.lang.String"/>
+		<field name="TRANSACTION_AMOUNT" class="java.math.BigDecimal"/>
+		<field name="ACCOUNT_CODE" class="java.lang.String"/>
+		<field name="BANK_UNIT_CODE" class="java.lang.String"/>
+		<field name="BANK_UNIT_NAME" class="java.lang.String"/>
+		<field name="TRANSACTION_TIME" class="java.lang.String"/>
+		<field name="LEDGER_TITLE" class="java.lang.String"/>
+		<field name="LEDGER_CODE" class="java.lang.String"/>
+		<field name="CURRENCY_ISO_CODE" class="java.lang.String"/>
+		<field name="SUPERVISOR_BANK_UNIT_NAME" class="java.lang.String"/>
+		<field name="SUPERVISOR_BANK_UNIT_CODE" class="java.lang.String"/>
+		<field name="FINANCIAL_IMPACT_DATE" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="IACCOUNTCODE" class="java.lang.String"/>
+	<parameter name="IMODULEID" class="java.lang.String"/>
+	<parameter name="IFROMDATE" class="java.lang.String"/>
+	<parameter name="IENDDATE" class="java.lang.String"/>
+	<parameter name="IBANKUNITID" class="java.lang.String"/>
+	<parameter name="IUSERID" class="java.lang.String"/>
+	<queryString language="plsql">
+		<![CDATA[SELECT 
+(SELECT B.BANK_UNIT_CODE FROM UNT.BANK_UNITS B WHERE B.BANK_UNIT_ID = $P{IBANKUNITID}) AS  BANK_UNIT_CODE,  
+(SELECT M.MODULE_NAME FROM BIM.MODULES M WHERE M.MODULE_ID = $P{IMODULEID}) AS MODULE_NAME,
+( to_char(sysdate, 'yyyy/mm/dd', 'nls_calendar=persian')) AS REPORT_DATE,
+N'مهین جهانی' AS USER_NAME
+ 
+
+ FROM DUAL]]>
+	</queryString>
+	<field name="BANK_UNIT_CODE" class="java.lang.String"/>
+	<field name="MODULE_NAME" class="java.lang.String"/>
+	<field name="REPORT_DATE" class="java.lang.String"/>
+	<field name="USER_NAME" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="739" y="0" width="80" height="79" uuid="a18c54ab-702b-4721-bc56-3d6bf361f9c0"/>
+				<imageExpression><![CDATA["C:/KhadamatWorkSpace/WorkSpace/ZACC/web/Images/ReportLogo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="309" y="40" width="220" height="36" uuid="6a8f2e02-193b-4e44-bccb-6d3d3a6396f8"/>
+				<textElement textAlignment="Center">
+					<font fontName="B Nazanin" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[گزارش اطلاعات مالی تراکنش های حساب]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="208" splitType="Stretch">
+			<staticText>
+				<reportElement x="729" y="10" width="74" height="20" uuid="beb53566-1aee-48b4-a688-2eb40e8c3452"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<text><![CDATA[کاربر گزارش گیرنده]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+				<reportElement x="566" y="70" width="142" height="20" uuid="8bcfe4e9-d432-41a3-8840-f398f66f2b6a">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BANK_UNIT_CODE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="566" y="10" width="142" height="20" uuid="a759da47-b156-41fd-999a-0aed79fe346d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{USER_NAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="723" y="70" width="80" height="20" uuid="3b2d55c5-d2e5-4dc3-b22f-1d017594bed1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<text><![CDATA[شعبه گزارش گیرنده]]></text>
+			</staticText>
+			<textField pattern="dd/mm/yyyy h:mm a" isBlankWhenNull="true">
+				<reportElement x="566" y="40" width="142" height="20" uuid="6749018e-03eb-4eda-abb8-421131226993"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{REPORT_DATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="751" y="40" width="52" height="20" uuid="ba11662d-fb72-468a-8585-bcc6d64a6569"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<text><![CDATA[تاریخ گزارش]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="411" y="10" width="46" height="20" uuid="f4ffddea-fee4-43bd-a6a6-dd2fd2720b60">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<text><![CDATA[کد حساب]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="253" y="10" width="148" height="20" uuid="81b82249-c966-4ced-a968-ec88634cafed">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IACCOUNTCODE}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="253" y="40" width="148" height="20" uuid="bcbc7117-faf9-4bc7-b3f3-8cc229e71357"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MODULE_NAME}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="415" y="40" width="38" height="20" uuid="ae4b5a7f-c68f-493e-a1c4-f9a3091a54c6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<text><![CDATA[ماژول]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="1" y="113" width="804" height="92" uuid="2ee0173f-0a41-485d-821d-89c6036b33e1"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="TableDataset" uuid="2b1ab0d4-f132-44e1-93fe-b668138b9b71">
+						<datasetParameter name="IACCOUNTCODE">
+							<datasetParameterExpression><![CDATA[$P{IACCOUNTCODE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="IMODULEID">
+							<datasetParameterExpression><![CDATA[$P{IMODULEID}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="IFROMDATE">
+							<datasetParameterExpression><![CDATA[$P{IFROMDATE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="IENDDATE">
+							<datasetParameterExpression><![CDATA[$P{IENDDATE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="ORACLE_REF_CURSOR">
+							<datasetParameterExpression><![CDATA[$P{ORACLE_REF_CURSOR}]]></datasetParameterExpression>
+						</datasetParameter>
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="50" uuid="24cf698b-a32d-4c38-a687-0ce489411daf">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="cb1b5b72-6087-47a5-80f1-72b025b766da"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[تاریخ مالی]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="1d6efeb5-3703-40e8-a77f-48dbe39802e4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{FINANCIAL_IMPACT_DATE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="28a622ce-c350-44e5-a8c4-c4d3861b78f3">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="87574ad4-a60e-492b-826d-af29d011f4b4"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[نام اداره امور]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="1393fb22-1061-4f88-b961-d37fccc29fdf"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{SUPERVISOR_BANK_UNIT_CODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="61cdd1d4-9c42-427a-95ee-4ddb17a96517">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="55" height="30" uuid="be193cea-a8ec-4018-9b67-b2f32a10d6df"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[کد اداره امور]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="55" height="30" uuid="637eae7e-ed71-4ffd-a6d0-5f0470fbc5de"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{SUPERVISOR_BANK_UNIT_NAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="35" uuid="58cb2da6-c623-430d-8232-89e530d54827">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="35" height="30" uuid="a8a2d518-d52c-4858-821c-631c513b8f3a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[کد ارز]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="35" height="30" uuid="2393eab8-a09e-44cb-b3ed-d3fe2527cbcc"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="SansSerif" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{CURRENCY_ISO_CODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="65" uuid="8fa1bfd3-5eb4-4a4f-ad56-c6ff4c973f6e">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="65" height="30" uuid="aaae0505-780d-4c4e-b9b8-1006ad4ff4bb"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[سرفصل]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="65" height="30" uuid="7aab994e-b51d-42ad-a2bc-5487842bcd4f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{LEDGER_CODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="76" uuid="bbffdce5-d081-40d9-ad5e-0944ae549f4f">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="76" height="30" uuid="1801d25a-13e4-4a54-9750-da9037c426a3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[شرح سرفصل]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="76" height="30" uuid="14cc978f-2605-44cb-898b-48ad55d58637"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{LEDGER_TITLE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="ca887d33-d48b-43d6-b60a-33869fd14710">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="36503c1a-d34b-4320-a37a-91a47bca3200"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[زمان تراکنش]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="ec4e5304-4592-4abc-88d7-8b933137df33"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TRANSACTION_TIME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="51f50853-bf03-4591-83ce-f89b0b5e6659">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="60" height="30" uuid="0f5450e1-93ee-4a6b-8699-6cd9ca76d217"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[شعبه عامل]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="60" height="30" uuid="8c196eeb-e96e-4a00-9ee9-6cf48b427c2e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{BANK_UNIT_NAME}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="412d5f3c-a1e1-439d-8660-51894ed1bb2a">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="003a4179-bcaf-4f5e-9e24-e95077b829fe"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[کد شعبه عامل]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="bb0a35ae-d42b-47d6-b322-3829534c1d87"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{BANK_UNIT_CODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="e03d1433-8555-429d-aa9c-69b933d3f404">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="55" height="30" uuid="0f0b296b-1fbc-4f77-89ef-fa7d4fd3ce5d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[شماره حساب]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="55" height="30" uuid="73697404-16c1-4789-92cc-9e8d21072ec3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ACCOUNT_CODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="55457efe-1f2a-4acd-af72-b116a61037d1">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="60" height="30" uuid="41a9dce7-f71c-491f-8b1d-d071c4f6b45a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[مبلغ تراکنش]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" pattern="#,##0" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="60" height="30" uuid="2ac8eae6-4f73-41cf-9f41-c10f44f24948"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TRANSACTION_AMOUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="50" uuid="a3ab7665-4a8c-48a3-b241-c8161898e46a">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="f56c059d-cca4-42c6-9b79-8a0473eff4b0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[کد کاربر]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="50" height="30" uuid="54e35910-64c6-4a4a-9dd5-74f8508bedb7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{PERSONNEL_CODE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="cbdd9353-95de-44a7-a8cd-acb7901956cb">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="55" height="30" uuid="86bce732-3f78-4f70-ba3f-43afa681ee0a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[شماره مشتری]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="55" height="30" uuid="901d15c5-66b8-4862-aa9a-da281aae9551"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{CUSTOMER_NUMBER}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="35" uuid="d689436d-cd41-4486-8990-6c4b182f33cd">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="35" height="30" uuid="09552602-7fb9-42f1-b325-76fd2caa0ac6"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[ماهیت]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="35" height="30" uuid="61b5fa8a-4b2b-428f-86a3-b31a636b9295"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{ROW_NATURE}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="55" uuid="252c6857-9762-4130-98b7-ec8c2aab5ec3">
+						<jr:columnHeader style="Table_CH" height="30">
+							<staticText>
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="54" height="30" uuid="816022dc-a052-4d21-8129-2d5339862345"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="11"/>
+								</textElement>
+								<text><![CDATA[کد تراکنش]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="true">
+								<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="54" height="30" uuid="d891fac7-ad47-4d81-a7c6-1f4a14f9214c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="B Nazanin" size="10"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{TRANSACTION_NUMBER}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="53" y="10" width="46" height="20" uuid="113dd4fc-f0e1-436f-b443-33d9cf16e5a2"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<text><![CDATA[از تاریخ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="-1" y="40" width="58" height="20" uuid="93e067c2-3e26-48a5-89a6-6fa0821d5dc9"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IENDDATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="53" y="40" width="46" height="20" uuid="32c15a0f-282f-4a6f-8b7a-06765d41bed6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<text><![CDATA[تا تاریخ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="-1" y="10" width="58" height="20" uuid="2ea38b9a-7e91-43c9-805a-354510f3d8bd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="B Nazanin" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{IFROMDATE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="6" width="138" height="20" uuid="cab43c01-6249-4488-862b-8732dd07e1f3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="B Nazanin"/>
+				</textElement>
+				<textFieldExpression><![CDATA["صفحه"+$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="351" y="44" width="100" height="20" uuid="3dc4744f-fd00-4e2f-a7e9-b730abd7f85a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Nazanin"/>
+				</textElement>
+				<text><![CDATA[امضا مسئول شعبه]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="43" width="100" height="20" uuid="13bfd28f-7a24-4ccb-b0f5-8c82181c97e4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Nazanin"/>
+				</textElement>
+				<text><![CDATA[تاریخ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="701" y="43" width="100" height="20" uuid="2867334d-0904-4ff6-87ee-ff30e443fdf5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="B Nazanin"/>
+				</textElement>
+				<text><![CDATA[امضا کاربر]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

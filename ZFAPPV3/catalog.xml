@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/JZBPMS/TESTService?wsdl" uri="src/conf/xml-resources/web-service-references/TESTService/wsdl/localhost_8080/JZBPMS/TESTService.wsdl"/>
+    <system systemId="http://localhost:8080/JZBPMS/TESTService?xsd=1" uri="src/conf/xml-resources/web-service-references/TESTService/wsdl/localhost_8080/JZBPMS/TESTService.xsd_1.xsd"/>
+    <system systemId="http://localhost:5353/PaymentService.asmx?WSDL" uri="src/conf/xml-resources/web-service-references/PaymentService/wsdl/localhost_5353/PaymentService.asmx.wsdl"/>
+    <system systemId="http://localhost:7800/mys/mycomputeservice.asmx?wsdl" uri="src/conf/xml-resources/web-service-references/mycomputeservice/wsdl/localhost_7800/mys/mycomputeservice.asmx.wsdl"/>
+    <system systemId="http://localhost:7800/mys/mycomputeservice.asmx?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/mycomputeservice/wsdl/localhost_7800/mys/mycomputeservice.asmx.xsd_xsd0.xsd"/>
+    <system systemId="http://localhost:7800/CoreService/OpenDeposit.asmx?wsdl" uri="src/conf/xml-resources/web-service-references/OpenDeposit/wsdl/localhost_7800/CoreService/OpenDeposit.asmx.wsdl"/>
+    <system systemId="http://localhost:7800/CoreService/OpenDeposit.asmx?xsd=xsd0" uri="src/conf/xml-resources/web-service-references/OpenDeposit/wsdl/localhost_7800/CoreService/OpenDeposit.asmx.xsd_xsd0.xsd"/>
+</catalog>

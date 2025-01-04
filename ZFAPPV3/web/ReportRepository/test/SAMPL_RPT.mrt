@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <_x0033_ Ref="2" type="Stimulsoft.Report.Dictionary.StiOracleDatabase" isKey="true">
+        <Alias>3</Alias>
+        <ConnectionStringEncrypted>9Mj7oWJRwtFreKWExEklf9F4s4NWSlFZYlrtjWQN4Gfx8s1IRVYRgMJL/ezqXHLn81jbjFsJwxlFBpyU4QDnRokw/8tiTPOJwGvQvekAt0bV8rnN</ConnectionStringEncrypted>
+        <Key>408e0d9a088e440f89c2ccd880999f3e</Key>
+        <Name>3</Name>
+      </_x0033_>
+    </Databases>
+    <DataSources isList="true" count="4">
+      <DataSource1 Ref="3" type="Stimulsoft.Report.Dictionary.StiOracleSource" isKey="true">
+        <Alias>DataSource1</Alias>
+        <Columns isList="true" count="4">
+          <value>ORIGINAL,LEDGER_ID,LEDGER_ID,LEDGER_ID,System.Int32,e69fd70ef5df487eb271255de4718bf0</value>
+          <value>ORIGINAL,LEDGER_STRUCTURE_ID,LEDGER_STRUCTURE_ID,LEDGER_STRUCTURE_ID,System.Int16,_x0035_abddf42050343e4a8f8902ae25dc828</value>
+          <value>ORIGINAL,LEDGER_TITLE,LEDGER_TITLE,LEDGER_TITLE,System.String,_x0033_7711aba983a4e3b8ead6f6635fcf073</value>
+          <value>ORIGINAL,INHERITANCE_TITLE,INHERITANCE_TITLE,INHERITANCE_TITLE,System.String,_x0031_2a9b5570ec540c3afc784ba70e5c0d0</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>1b27890a00f747b7963a067e5b70d2cd</Key>
+        <Name>DataSource1</Name>
+        <NameInSource>3</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>_x0040_I_LEDGER_ID,,107,0</value>
+        </Parameters>
+        <SqlCommand>call RPT_TEST2 @I_LEDGER_ID</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </DataSource1>
+      <GLD_LEDGERS Ref="4" type="Stimulsoft.Report.Dictionary.StiOracleSource" isKey="true">
+        <Alias>GLD.LEDGERS</Alias>
+        <Columns isList="true" count="33">
+          <value>LEDGER_ID,System.Decimal</value>
+          <value>LEDGER_STRUCTURE_ID,System.Decimal</value>
+          <value>PARENT_ID,System.Decimal</value>
+          <value>LAYER_DEPTH,System.Decimal</value>
+          <value>INHERITANCE_CODE,System.String</value>
+          <value>INHERITANCE_TITLE,System.String</value>
+          <value>IS_LAST_LEVEL,System.Decimal</value>
+          <value>LEDGER_CODE,System.String</value>
+          <value>LEDGER_TITLE,System.String</value>
+          <value>LEDGER_CAPTION,System.String</value>
+          <value>LEDGER_CODE_OLD,System.String</value>
+          <value>LEDGER_NATURE,System.Decimal</value>
+          <value>LEDGER_NATURE_CONTROL,System.Decimal</value>
+          <value>END_DAY_SETTLEMENT,System.Decimal</value>
+          <value>END_FINANCIAL_PERIOD_SETTLEMENT,System.Decimal</value>
+          <value>LEDGER_CLASS,System.Decimal</value>
+          <value>LEDGER_LIFE_PERIOD,System.Decimal</value>
+          <value>LEDGER_BALANCE,System.Decimal</value>
+          <value>LEDGER_DISCIPLINE,System.Decimal</value>
+          <value>CURRENCY_TYPE,System.Decimal</value>
+          <value>ISSUE_MANUAL_VOUCHER,System.Decimal</value>
+          <value>IS_TRACKABLE_FEATURE,System.Decimal</value>
+          <value>LEDGER_TYPE,System.Decimal</value>
+          <value>UNNUMBERED_LEDGER_TYPE,System.Decimal</value>
+          <value>UNPUANTE_LEDGER_TYPE,System.Decimal</value>
+          <value>PRE_LEDGER_ID,System.Decimal</value>
+          <value>IS_ACTIVE,System.Decimal</value>
+          <value>VALIDITY_DATE,System.Decimal</value>
+          <value>REMARKS,System.String</value>
+          <value>CREATE_DATE,System.String</value>
+          <value>CREATE_USER_ID,System.Decimal</value>
+          <value>UPDATE_DATE,System.String</value>
+          <value>UPDATE_USER_ID,System.Decimal</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>72ef2026c0004fcebcc486fa4df7feed</Key>
+        <Name>GLD.LEDGERS</Name>
+        <NameInSource>3</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select l.ledger_id,l.ledger_code,l.ledger_title,l.inheritance_title from gld.ledgers l
+where l.ledger_id&lt;100</SqlCommand>
+      </GLD_LEDGERS>
+      <DataSource2 Ref="5" type="Stimulsoft.Report.Dictionary.StiOracleSource" isKey="true">
+        <Alias>DataSource2</Alias>
+        <Columns isList="true" count="4">
+          <value>ORIGINAL,LEDGER_ID,LEDGER_ID,LEDGER_ID,System.Int32,ae6d8597532842d4aee03639c16a618a</value>
+          <value>ORIGINAL,LEDGER_STRUCTURE_ID,LEDGER_STRUCTURE_ID,LEDGER_STRUCTURE_ID,System.Int16,_x0038_3cc9bb939174b67bf2471bdf342dfa9</value>
+          <value>ORIGINAL,LEDGER_TITLE,LEDGER_TITLE,LEDGER_TITLE,System.String,d2b3b1baea344fe3a78d1a5c0b1111cd</value>
+          <value>ORIGINAL,INHERITANCE_TITLE,INHERITANCE_TITLE,INHERITANCE_TITLE,System.String,d8a9fea277ce4a529a6f8debe110b4e3</value>
+        </Columns>
+        <CommandTimeout>30000</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>b20eb3bf1fe84afb8b948fa71d76faaa</Key>
+        <Name>DataSource2</Name>
+        <NameInSource>3</NameInSource>
+        <Parameters isList="true" count="2">
+          <value>I_LEDGER_ID,,113,0,bf038d0b18914b6d9f7bc992f7dc96aa</value>
+          <value>O_CURSOR1,,121,0</value>
+        </Parameters>
+        <SqlCommand>RPT_TEST2 (I_LEDGER_ID) </SqlCommand>
+        <Type>StoredProcedure</Type>
+      </DataSource2>
+      <DataSource3 Ref="6" type="Stimulsoft.Report.Dictionary.StiOracleSource" isKey="true">
+        <Alias>DataSource3</Alias>
+        <Columns isList="true" count="4">
+          <value>LEDGER_ID,System.Int32</value>
+          <value>LEDGER_STRUCTURE_ID,System.Int16</value>
+          <value>LEDGER_TITLE,System.String</value>
+          <value>INHERITANCE_TITLE,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Key>4ad343d3318c40c69b3722f078978e67</Key>
+        <Name>DataSource3</Name>
+        <NameInSource>3</NameInSource>
+        <Parameters isList="true" count="1">
+          <value>I_LEDGER_ID,,107,0</value>
+        </Parameters>
+        <SqlCommand>RPT_TEST2</SqlCommand>
+        <Type>StoredProcedure</Type>
+      </DataSource3>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>3b5b325bfb5f45168d17ef3c9e333a81</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="7" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <ReportTitleBand1 Ref="8" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,7.72,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <RichText1 Ref="9" type="Stimulsoft.Report.Components.StiRichText" isKey="true">
+              <BackColor>Transparent</BackColor>
+              <ClientRectangle>2.6,0.2,2.3,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DataColumn />
+              <Expressions isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>RichText1</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>__LP___x005C_rtf1_x005C_fbidis_x005C_ansi_x005C_ansicpg1252_x005C_deff0_x005C_nouicompat_x005C_deflang1033__LP___x005C_fonttbl__LP___x005C_f0_x005C_fnil_x005C_fcharset178_x0020_Microsoft_x0020_Sans_x0020_Serif_x003B___RP____LP___x005C_f1_x005C_fnil_x005C_fcharset0_x0020_Microsoft_x0020_Sans_x0020_Serif_x003B___RP____RP___x000D__x000A___LP___x005C__x002A__x005C_generator_x0020_Riched20_x0020_10.0.19041__RP___x005C_viewkind4_x005C_uc1_x0020__x000D__x000A__x005C_pard_x005C_ltrpar_x005C_qc_x005C_f0_x005C_rtlch_x005C_fs17_x005C_lang1065_x005C__x0027_90_x005C__x0027_d2_x005C__x0027_c7_x005C__x0027_d1_x005C__x0027_d4_x0020__x005C__x0027_90_x005C__x0027_d1_x005C__x0027_cf_x005C__x0027_d4_x0020__x005C__x0027_cd_x005C__x0027_d3_x005C__x0027_c7_x005C__x0027_c8_x005C_f1_x005C_ltrch_x005C_lang1033_x005C_par_x000D__x000A___RP___x000D__x000A_</Text>
+            </RichText1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ReportTitleBand1>
+        <HeaderBand1 Ref="10" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,1.4,7.72,1.1</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text2 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.3,0.3,1.4,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="7" />
+              <Parent isRef="10" />
+              <Text>{DataSource1.LEDGER_ID}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+            <Text4 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,0.4,1.2,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="7" />
+              <Parent isRef="10" />
+              <Text>{DataSource1.LEDGER_STRUCTURE_ID}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text4>
+            <Text5 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.7,0.4,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="7" />
+              <Parent isRef="10" />
+              <Text>{DataSource1.LEDGER_TITLE}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text5>
+            <Text6 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.8,0.4,1.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="7" />
+              <Parent isRef="10" />
+              <Text>{DataSource1.INHERITANCE_TITLE}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </HeaderBand1>
+        <DataBand2 Ref="15" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.9,7.72,0.6</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="16" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.4,0.2,1.6,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="7" />
+              <Parent isRef="15" />
+              <Text>{GLD_LEDGERS.LEDGER_ID}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text1>
+            <Text11 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2.1,0.2,2.3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="7" />
+              <Parent isRef="15" />
+              <Text>{GLD_LEDGERS.LEDGER_CODE}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text11>
+            <Text13 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0.2,3,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>B Nazanin,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="7" />
+              <Parent isRef="15" />
+              <Text>{GLD_LEDGERS.LEDGER_TITLE}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text13>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <DataDataSource2 Ref="19" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3.9,7.72,0.3</ClientRectangle>
+          <Components isList="true" count="4">
+            <DataDataSource2_LEDGER_ID Ref="20" type="Text" isKey="true">
+              <Border>All;[143:102:102];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,1.9,0.3</ClientRectangle>
+              <ComponentStyle>Flaxen_Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDataSource2_LEDGER_ID</Name>
+              <Page isRef="7" />
+              <Parent isRef="19" />
+              <Text>{DataSource2.LEDGER_ID}</Text>
+              <TextBrush>[193:152:89]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDataSource2_LEDGER_ID>
+            <DataDataSource2_LEDGER_STRUCTURE_ID Ref="21" type="Text" isKey="true">
+              <Border>All;[143:102:102];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>1.9,0,1.9,0.3</ClientRectangle>
+              <ComponentStyle>Flaxen_Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDataSource2_LEDGER_STRUCTURE_ID</Name>
+              <Page isRef="7" />
+              <Parent isRef="19" />
+              <Text>{DataSource2.LEDGER_STRUCTURE_ID}</Text>
+              <TextBrush>[193:152:89]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDataSource2_LEDGER_STRUCTURE_ID>
+            <DataDataSource2_LEDGER_TITLE Ref="22" type="Text" isKey="true">
+              <Border>All;[143:102:102];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.8,0,1.9,0.3</ClientRectangle>
+              <ComponentStyle>Flaxen_Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDataSource2_LEDGER_TITLE</Name>
+              <Page isRef="7" />
+              <Parent isRef="19" />
+              <Text>{DataSource2.LEDGER_TITLE}</Text>
+              <TextBrush>[193:152:89]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDataSource2_LEDGER_TITLE>
+            <DataDataSource2_INHERITANCE_TITLE Ref="23" type="Text" isKey="true">
+              <Border>All;[143:102:102];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>5.7,0,2,0.3</ClientRectangle>
+              <ComponentStyle>Flaxen_Data1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>DataDataSource2_INHERITANCE_TITLE</Name>
+              <Page isRef="7" />
+              <Parent isRef="19" />
+              <Text>{DataSource2.INHERITANCE_TITLE}</Text>
+              <TextBrush>[193:152:89]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </DataDataSource2_INHERITANCE_TITLE>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>DataSource2</DataSourceName>
+          <EvenStyle>Flaxen_Data1_Even Style</EvenStyle>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>DataDataSource2</Name>
+          <OddStyle>Flaxen_Data1_Odd Style</OddStyle>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataDataSource2>
+        <TableDataSource3 Ref="24" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4.6,7.72,0.3</ClientRectangle>
+          <ColumnCount>4</ColumnCount>
+          <Components isList="true" count="4">
+            <TableDataSource3_Cell1 Ref="25" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0,0,2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>0</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDataSource3_Cell1</Name>
+              <Page isRef="7" />
+              <Parent isRef="24" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DataSource3.LEDGER_ID}</Text>
+              <TextBrush>Black</TextBrush>
+            </TableDataSource3_Cell1>
+            <TableDataSource3_Cell2 Ref="26" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>2,0,1.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>1</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDataSource3_Cell2</Name>
+              <Page isRef="7" />
+              <Parent isRef="24" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DataSource3.LEDGER_STRUCTURE_ID}</Text>
+              <TextBrush>Black</TextBrush>
+            </TableDataSource3_Cell2>
+            <TableDataSource3_Cell3 Ref="27" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>3.9,0,1.9,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>2</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDataSource3_Cell3</Name>
+              <Page isRef="7" />
+              <Parent isRef="24" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DataSource3.LEDGER_TITLE}</Text>
+              <TextBrush>Black</TextBrush>
+            </TableDataSource3_Cell3>
+            <TableDataSource3_Cell4 Ref="28" type="TableCell" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>5.8,0,1.92,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <ID>3</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>TableDataSource3_Cell4</Name>
+              <Page isRef="7" />
+              <Parent isRef="24" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{DataSource3.INHERITANCE_TITLE}</Text>
+              <TextBrush>Black</TextBrush>
+            </TableDataSource3_Cell4>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>DataSource3</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <MinHeight>0.1</MinHeight>
+          <Name>TableDataSource3</Name>
+          <NumberID>4</NumberID>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <RowCount>1</RowCount>
+          <Sort isList="true" count="0" />
+        </TableDataSource3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>f2b76a3cfe7e4dd6bf8f95fce4933299</Guid>
+      <Margins>0.39,0.39,0.39,0.39</Margins>
+      <Name>Page1</Name>
+      <PageHeight>11</PageHeight>
+      <PageWidth>8.5</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>4/10/2022 8:52:38 AM</ReportChanged>
+  <ReportCreated>4/5/2022 3:14:35 PM</ReportCreated>
+  <ReportFile>C:\KhadamatWorkSpace\WorkSpace\ZACC\web\ReportRepository\SAMPL_RPT.mrt</ReportFile>
+  <ReportGuid>8c98ee26a40f404ba4006549fafcb609</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2021.3.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="12">
+    <Flaxen_Report_Title1 Ref="29" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item29 Ref="30" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item29>
+      </Conditions>
+      <Font>Arial,14,Bold</Font>
+      <Name>Flaxen_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Report_Title1>
+    <Flaxen_Report_Title2 Ref="31" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item31 Ref="32" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item31>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Flaxen_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Report_Title2>
+    <Flaxen_Report_Summary Ref="33" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item33 Ref="34" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item33>
+      </Conditions>
+      <Font>Arial,10,Bold</Font>
+      <Name>Flaxen_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Report_Summary>
+    <Flaxen_Page_Header Ref="35" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item35 Ref="36" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item35>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Flaxen_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Page_Header>
+    <Flaxen_Page_Footer Ref="37" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item37 Ref="38" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item37>
+      </Conditions>
+      <Font>Arial,10</Font>
+      <Name>Flaxen_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Page_Footer>
+    <Flaxen_Group_Header1 Ref="39" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item39 Ref="40" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item39>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Flaxen_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Group_Header1>
+    <Flaxen_Group_Footer1 Ref="41" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item41 Ref="42" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item41>
+      </Conditions>
+      <Font>Arial,13,Bold</Font>
+      <Name>Flaxen_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Group_Footer1>
+    <Flaxen_Header1 Ref="43" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;[143:102:102];1;Solid;False;4;Black;True</Border>
+      <Brush>[242:234:221]</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item43 Ref="44" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item43>
+      </Conditions>
+      <Font>Arial,8,Bold</Font>
+      <Name>Flaxen_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Header1>
+    <Flaxen_Data1 Ref="45" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item45 Ref="46" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item45>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Flaxen_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Data1>
+    <Flaxen_Data1_Odd_x0020_Style Ref="47" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>White</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item47 Ref="48" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item47>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Flaxen_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Data1_Odd_x0020_Style>
+    <Flaxen_Data1_Even_x0020_Style Ref="49" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>[240:237:232]</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item49 Ref="50" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item49>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Flaxen_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Data1_Even_x0020_Style>
+    <Flaxen_Footer1 Ref="51" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>All;[143:102:102];1;Solid;False;4;Black</Border>
+      <Brush>[242:234:221]</Brush>
+      <CollectionName>Flaxen</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item51 Ref="52" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item51>
+      </Conditions>
+      <Font>Arial,8</Font>
+      <Name>Flaxen_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[193:152:89]</TextBrush>
+    </Flaxen_Footer1>
+  </Styles>
+</StiSerializer>

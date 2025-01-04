@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+            <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    <listener>
+        <listener-class>
+            zdg.zframe.diagnostic.SessionCounter
+        </listener-class>
+    </listener>
+    <listener>
+        <listener-class>
+            zdg.zframe.diagnostic.ApplicationEvent
+        </listener-class>
+    </listener>
+    
+    
+    
+  
+    
+    
+        
+<filter>  
+    <filter-name>ImageFilter</filter-name>  
+    <filter-class>zdg.zframe.filter.BrowserCashing</filter-class>  
+    <async-supported>true</async-supported>
+</filter>  
+<filter-mapping>
+   <filter-name>ImageFilter</filter-name>
+   <url-pattern>/*</url-pattern>   
+</filter-mapping>
+    
+
+            
+<!--<filter>  
+    <filter-name>SameSiteFilter</filter-name>  
+    <filter-class>zdg.zframe.filter.SameSiteFilter</filter-class>  
+    <async-supported>true</async-supported>
+</filter>  
+<filter-mapping>
+   <filter-name>SameSiteFilter</filter-name>
+   <url-pattern>/*</url-pattern>   
+</filter-mapping>
+        -->
+     
+<!--<filter>  
+    <filter-name>XSSFILTER</filter-name>  
+    <filter-class>zdg.zframe.filter.XSS</filter-class>  
+    <async-supported>true</async-supported>
+</filter>  
+<filter-mapping>
+   <filter-name>XSSFILTER</filter-name>
+   <url-pattern>/*</url-pattern>   
+</filter-mapping>
+        -->
+       
+       
+<!--      
+<filter>
+    <filter-name>pathTraversalFilter</filter-name>
+    <filter-class>zdg.zframe.filter.PathTraversalFilter</filter-class>
+    <async-supported>true</async-supported>
+    <init-param>
+        <param-name>extension</param-name>
+        <param-value>
+            png, html, htm, xhtml, dhtml, shtml, scss, mjs, json, gif, svg, xml, docx, doc, 
+            pem, rar, zip, aspx, asp, cgi, pl, rss, cfm, atom, ttf, ico, woff2, zfms, 
+            android, prf, gcs, zxs, zjs, formula, swagger, webpart, ott, state, zffile, rcc, 
+            zor, zf_grid, tenpzf_grid, lic, zdgx, zjaxg, gcl, xlsx, jsp, configdata, cpl, 
+            code, bpm, ajx, zf_complex, jpg, bmp, css, js, zf_cds, zf_lcm, zf_datasource, 
+            zf_form, zf_control, zf_gridsource
+        </param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>pathTraversalFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>-->
+
+           
+       
+<servlet>   
+      <servlet-name>uploadfile</servlet-name>
+           <jsp-file>/import.jsp</jsp-file>
+           <multipart-config>
+               <location>/temp</location>
+               <max-file-size>20848820</max-file-size>
+               <max-request-size>418018841</max-request-size>
+               <file-size-threshold>1048576</file-size-threshold>
+           </multipart-config>
+</servlet>
+<servlet-mapping>
+            <servlet-name>uploadfile</servlet-name>
+            <url-pattern>/import.jsp</url-pattern>
+</servlet-mapping>
+    
+    
+<servlet>
+ <servlet-name>StimulsoftResource</servlet-name>
+ <servlet-class>com.stimulsoft.web.servlet.StiWebResourceServlet</servlet-class>
+</servlet>
+ <servlet-mapping>
+         <servlet-name>StimulsoftResource</servlet-name>
+         <url-pattern>/stimulsoft_web_resource/*</url-pattern>
+ </servlet-mapping>
+
+
+ <servlet>
+         <servlet-name>StimulsoftDesignerAction</servlet-name>
+         <servlet-class>com.stimulsoft.webdesigner.servlet.StiWebDesignerActionServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+         <servlet-name>StimulsoftDesignerAction</servlet-name>
+         <url-pattern>/stimulsoft_webdesigner_action</url-pattern>
+ </servlet-mapping>
+ 
+ 
+
+<servlet>
+    <servlet-name>StimulsoftAction</servlet-name>
+    <servlet-class>com.stimulsoft.webviewer.servlet.StiWebViewerActionServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>StimulsoftAction</servlet-name>
+    <url-pattern>/stimulsoft_webviewer_action</url-pattern>
+</servlet-mapping> 
+
+
+
+
+
+<error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>403</error-code>
+    <location>/error.html</location>
+    
+</error-page>
+
+
+
+<error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>401</error-code>
+    <location>/error.html</location>
+    
+</error-page>
+
+
+
+
+<error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>404</error-code>
+    <location>/error.html</location>
+    
+</error-page>
+<error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>414</error-code>
+    <location>/error.html</location>
+    
+</error-page>
+               
+ <error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>400</error-code>
+    <location>/error.html</location>
+    
+</error-page>
+                                      
+ <error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>500</error-code>
+    <location>/error.html</location>
+    
+</error-page>
+
+<error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>501</error-code>
+    <location>/error.html</location>
+    
+</error-page>               
+             
+                            
+<error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>505</error-code>
+    <location>/error.html</location>
+    
+</error-page>    
+                                                          
+                                                      
+</web-app>
